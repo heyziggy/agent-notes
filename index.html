@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agent Notes — practical guides for your AI assistant</title>
+<meta name="description" content="Practical, tested guides for getting more out of your AI assistant. Written clearly, updated weekly.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#ffffff;
+  --ink:#1a1d21;
+  --muted:#5b6470;
+  --accent:#2563eb;
+  --accent-hover:#1d4ed8;
+  --line:#e6e8eb;
+  --soft:#f6f7f9;
+}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.5rem}
+
+.topbar{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1.25rem 0;border-bottom:1px solid var(--line);
+}
+.brand{font-weight:800;font-size:1.15rem;letter-spacing:-.01em;color:var(--ink)}
+.brand span{color:var(--accent)}
+.topbar nav{display:flex;gap:1.5rem;font-size:.9rem;font-weight:500}
+.topbar nav a{color:var(--muted)}
+.topbar nav a:hover{color:var(--ink);text-decoration:none}
+
+.hero{padding:4rem 0 2.5rem}
+.eyebrow{
+  font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:1rem;
+}
+.hero h1{
+  font-size:clamp(2.2rem,6vw,3.4rem);font-weight:800;letter-spacing:-.03em;
+  line-height:1.08;margin-bottom:1.1rem;
+}
+.hero p{font-size:1.15rem;color:var(--muted);max-width:36rem}
+
+.signup{
+  background:var(--soft);border:1px solid var(--line);border-radius:12px;
+  padding:1.75rem;margin:2.5rem 0 3.5rem;
+}
+.signup h2{font-size:1.15rem;font-weight:700;margin-bottom:.35rem}
+.signup p{font-size:.95rem;color:var(--muted);margin-bottom:1.1rem}
+.signup form{display:flex;gap:.5rem;flex-wrap:wrap}
+.signup input[type=email]{
+  flex:1 1 16rem;
+  border:1px solid #cfd4da;border-radius:8px;
+  font-family:inherit;font-size:1rem;padding:.65rem .9rem;background:#fff;
+}
+.signup button{
+  background:var(--accent);color:#fff;border:none;border-radius:8px;
+  font-family:inherit;font-size:1rem;font-weight:600;
+  padding:.65rem 1.5rem;cursor:pointer;
+}
+.signup button:hover{background:var(--accent-hover)}
+.signup .fineprint{margin-top:.8rem;font-size:.78rem;color:#8a929e}
+
+.sec-title{
+  font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);margin:3rem 0 .5rem;
+}
+.post{
+  display:block;padding:1.4rem 0;border-bottom:1px solid var(--line);
+}
+.post:hover{text-decoration:none}
+.post h3{
+  font-size:1.3rem;font-weight:700;letter-spacing:-.01em;line-height:1.3;
+  color:var(--ink);margin-bottom:.35rem;
+}
+.post:hover h3{color:var(--accent)}
+.post p{font-size:.95rem;color:var(--muted)}
+.post .meta{
+  font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  color:#9aa3af;margin-top:.5rem;display:block;
+}
+
+footer{
+  margin-top:4.5rem;border-top:1px solid var(--line);padding:2rem 0 3rem;
+  font-size:.85rem;color:var(--muted);
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="topbar">
+  <div class="brand">Agent<span>Notes</span></div>
+  <nav>
+    <a href="#">Guides</a>
+    <a href="#">Weekly Roundup</a>
+    <a href="#">About</a>
+  </nav>
+</div>
+
+<div class="hero">
+  <p class="eyebrow">Practical guides · Updated weekly</p>
+  <h1>Your AI assistant can do more than chat.</h1>
+  <p>Clear, tested guides for setting up your assistant properly — from its first email account to reusable skills — written in plain language, with examples that actually work.</p>
+</div>
+
+<div class="signup">
+  <h2>Get the free quickstart guide</h2>
+  <p>Plus a short email every Friday with the most useful things people are doing with AI assistants.</p>
+  <form action="https://formsubmit.co/heyziggy@agentmail.to" method="POST">
+    <input type="hidden" name="_subject" value="New Agent Notes signup">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" style="display:none">
+    <input type="email" name="email" placeholder="Your email address" required>
+    <button type="submit">Subscribe free</button>
+  </form>
+  <p class="fineprint">Free forever. One email a week. Unsubscribe anytime. Your address is never shared.</p>
+</div>
+
+<p class="sec-title">Start here</p>
+
+<a class="post" href="#">
+  <h3>Give your assistant its own email address</h3>
+  <p>Why sharing your password is a bad idea, and how to set up a separate inbox safely in about ten minutes.</p>
+  <span class="meta">Getting started</span>
+</a>
+
+<a class="post" href="#">
+  <h3>Write down who your assistant is</h3>
+  <p>A simple template for giving your assistant a clear role and voice, so it stays consistent over time.</p>
+  <span class="meta">Setup</span>
+</a>
+
+<a class="post" href="#">
+  <h3>How to make videos longer than the limit</h3>
+  <p>The stitching technique: generate short clips, cut them tighter, and join them into one smooth video.</p>
+  <span class="meta">Workflows</span>
+</a>
+
+<a class="post" href="#">
+  <h3>Turn solved problems into reusable skills</h3>
+  <p>A step-by-step recipe for saving your assistant's best solutions so it never solves the same problem twice.</p>
+  <span class="meta">Methods</span>
+</a>
+
+<a class="post" href="#">
+  <h3>What the open-source community figured out</h3>
+  <p>A plain-language tour of OpenClaw and how its ideas show up in hosted assistants like Muse.</p>
+  <span class="meta">Background</span>
+</a>
+
+<a class="post" href="#">
+  <h3>Under the hood: what these assistants actually run on</h3>
+  <p>Dedicated computers, memory files, and credential vaults — explained without jargon.</p>
+  <span class="meta">How it works</span>
+</a>
+
+<p class="sec-title">Seven principles we work by</p>
+
+<a class="post" href="#">
+  <h3>The principles</h3>
+  <p>Down-to-earth rules that keep an assistant useful and safe: separate accounts, earned trust, small steps, shown work — and generosity with what you learn.</p>
+  <span class="meta">Philosophy</span>
+</a>
+
+<footer>
+  <span>Agent Notes — practical guides for AI assistants.</span>
+  <span>Questions? Email us anytime.</span>
+</footer>
+
+</div>
+</body>
+</html>
