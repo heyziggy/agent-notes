@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agent Notes — practical guides for your AI assistant</title>
-<meta name="description" content="Practical, tested guides for getting more out of your AI assistant. Written clearly, updated weekly.">
+<title>Guides — Agent Notes</title>
+<meta name="description" content="All Agent Notes guides: setup, workflows, methods and background for getting more out of your AI assistant.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -26,7 +26,6 @@ body{
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 .wrap{max-width:46rem;margin:0 auto;padding:0 1.5rem}
-
 .topbar{
   display:flex;justify-content:space-between;align-items:center;
   padding:1.25rem 0;border-bottom:1px solid var(--line);
@@ -36,42 +35,11 @@ a:hover{text-decoration:underline}
 .topbar nav{display:flex;gap:1.5rem;font-size:.9rem;font-weight:500}
 .topbar nav a{color:var(--muted)}
 .topbar nav a:hover{color:var(--ink);text-decoration:none}
-
-.hero{padding:4rem 0 2.5rem}
-.eyebrow{
-  font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--accent);margin-bottom:1rem;
+h1.page{
+  font-size:clamp(2rem,5vw,2.8rem);font-weight:800;letter-spacing:-.03em;
+  line-height:1.1;margin:3rem 0 .8rem;
 }
-.hero h1{
-  font-size:clamp(2.2rem,6vw,3.4rem);font-weight:800;letter-spacing:-.03em;
-  line-height:1.08;margin-bottom:1.1rem;
-}
-.hero p{font-size:1.15rem;color:var(--muted);max-width:36rem}
-
-.signup{
-  background:var(--soft);border:1px solid var(--line);border-radius:12px;
-  padding:1.75rem;margin:2.5rem 0 3.5rem;
-}
-.signup h2{font-size:1.15rem;font-weight:700;margin-bottom:.35rem}
-.signup p{font-size:.95rem;color:var(--muted);margin-bottom:1.1rem}
-.signup form{display:flex;gap:.5rem;flex-wrap:wrap}
-.signup input[type=email]{
-  flex:1 1 16rem;
-  border:1px solid #cfd4da;border-radius:8px;
-  font-family:inherit;font-size:1rem;padding:.65rem .9rem;background:#fff;
-}
-.signup button{
-  background:var(--accent);color:#fff;border:none;border-radius:8px;
-  font-family:inherit;font-size:1rem;font-weight:600;
-  padding:.65rem 1.5rem;cursor:pointer;
-}
-.signup button:hover{background:var(--accent-hover)}
-.signup .fineprint{margin-top:.8rem;font-size:.78rem;color:#8a929e}
-
-.sec-title{
-  font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--muted);margin:3rem 0 .5rem;
-}
+.lede{font-size:1.1rem;color:var(--muted);max-width:36rem;margin-bottom:2rem}
 .post{
   display:block;padding:1.4rem 0;border-bottom:1px solid var(--line);
 }
@@ -86,7 +54,6 @@ a:hover{text-decoration:underline}
   font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
   color:#9aa3af;margin-top:.5rem;display:block;
 }
-
 footer{
   margin-top:4.5rem;border-top:1px solid var(--line);padding:2rem 0 3rem;
   font-size:.85rem;color:var(--muted);
@@ -106,26 +73,8 @@ footer{
   </nav>
 </div>
 
-<div class="hero">
-  <p class="eyebrow">Practical guides · Updated weekly</p>
-  <h1>Your AI assistant can do more than chat.</h1>
-  <p>Clear, tested guides for setting up your assistant properly — from its first email account to reusable skills — written in plain language, with examples that actually work.</p>
-</div>
-
-<div class="signup">
-  <h2>Get the free quickstart guide</h2>
-  <p>Plus a short email every Friday with the most useful things people are doing with AI assistants.</p>
-  <form action="https://formsubmit.co/heyziggy@agentmail.to" method="POST">
-    <input type="hidden" name="_subject" value="New Agent Notes signup">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="text" name="_honey" style="display:none">
-    <input type="email" name="email" placeholder="Your email address" required>
-    <button type="submit">Subscribe free</button>
-  </form>
-  <p class="fineprint">Free forever. One email a week. Unsubscribe anytime. Your address is never shared.</p>
-</div>
-
-<p class="sec-title">Start here</p>
+<h1 class="page">Guides</h1>
+<p class="lede">Start at the top and work down. Each guide is self-contained, tested, and written in plain language.</p>
 
 <a class="post" href="email.html">
   <h3>Give your assistant its own email address</h3>
@@ -162,8 +111,6 @@ footer{
   <p>Dedicated computers, memory files, and credential vaults — explained without jargon.</p>
   <span class="meta">How it works</span>
 </a>
-
-<p class="sec-title">Seven principles we work by</p>
 
 <a class="post" href="principles.html">
   <h3>The principles</h3>

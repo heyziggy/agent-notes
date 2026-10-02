@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turn solved problems into reusable skills — Agent Notes</title>
+<meta name="description" content="A step-by-step recipe for saving your assistant's best solutions as reusable skills, so it never solves the same problem twice.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#ffffff;
+  --ink:#1a1d21;
+  --muted:#5b6470;
+  --accent:#2563eb;
+  --accent-hover:#1d4ed8;
+  --line:#e6e8eb;
+  --soft:#f6f7f9;
+}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.5rem}
+
+.topbar{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1.25rem 0;border-bottom:1px solid var(--line);
+}
+.brand{font-weight:800;font-size:1.15rem;letter-spacing:-.01em;color:var(--ink)}
+.brand span{color:var(--accent)}
+.topbar nav{display:flex;gap:1.5rem;font-size:.9rem;font-weight:500}
+.topbar nav a{color:var(--muted)}
+.topbar nav a:hover{color:var(--ink);text-decoration:none}
+
+.eyebrow{
+  font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:1rem;
+}
+
+.article{padding:3rem 0 0}
+.article h1{
+  font-size:clamp(2rem,5.5vw,3rem);font-weight:800;letter-spacing:-.03em;
+  line-height:1.1;margin-bottom:1.2rem;
+}
+.article h2{
+  font-size:1.4rem;font-weight:700;letter-spacing:-.01em;
+  margin:2.4rem 0 .8rem;
+}
+.article p{margin-bottom:1.1rem;font-size:1.05rem}
+.article ul,.article ol{margin:0 0 1.2rem 1.4rem;font-size:1.05rem}
+.article li{margin-bottom:.5rem}
+.article code{
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9em;
+  background:var(--soft);border:1px solid var(--line);border-radius:5px;
+  padding:.1rem .35rem;
+}
+.article blockquote{
+  border-left:3px solid var(--accent);background:var(--soft);
+  padding:1rem 1.25rem;margin:0 0 1.4rem;border-radius:0 8px 8px 0;
+}
+.article blockquote p{margin-bottom:0}
+.article .backlink{
+  display:inline-block;margin-top:2.5rem;font-size:.95rem;font-weight:600;
+}
+
+footer{
+  margin-top:4.5rem;border-top:1px solid var(--line);padding:2rem 0 3rem;
+  font-size:.85rem;color:var(--muted);
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="topbar">
+  <div class="brand"><a href="index.html" style="color:inherit">Agent<span>Notes</span></a></div>
+  <nav>
+    <a href="guides.html">Guides</a>
+    <a href="roundup.html">Weekly Roundup</a>
+    <a href="about.html">About</a>
+  </nav>
+</div>
+
+<article class="article">
+  <p class="eyebrow">Methods</p>
+  <h1>Turn solved problems into reusable skills</h1>
+
+  <p>Every assistant owner has had this experience: you explain a task, the assistant works through it, makes a few mistakes, and eventually gets it right. You ask for the same thing next week — and it starts from scratch. The clever workaround it found on Tuesday is gone, because nothing kept it.</p>
+
+  <p>That is the difference between a one-off solution and a skill. A one-off solution evaporates the moment the conversation ends. A skill is the same solution written down as a recipe: inputs, steps, tools, failure modes, and a way to check the result. Written once, it compounds — every future run is faster, cheaper, and more reliable than the first.</p>
+
+  <p>A skill is not a prompt pack. A prompt pack is a clever sentence you copy and hope still works. A skill is a problem you have already beaten, distilled. Here is the recipe I use.</p>
+
+  <h2>The recipe</h2>
+
+  <ol>
+    <li><strong>Work a real problem to a verified result.</strong> Do not write a skill for a hypothetical task. Run the actual job end to end, and confirm the output is genuinely right — not plausible, right. If you have not seen the finished result work, you have nothing to distill yet.</li>
+    <li><strong>Write down what actually worked.</strong> Note the inputs the task needed, the steps in order, the tools used, and the failure modes you hit along the way. Pay special attention to the mistakes: the ways the task went wrong are the most valuable lines in the document.</li>
+    <li><strong>Make it reproducible.</strong> Turn your notes into a standing document: clear instructions, a short prompt guide with example inputs, any helper scripts the task relies on, and a verification step at the end. Someone reading it cold — including your assistant next month — should be able to run it without improvising.</li>
+    <li><strong>Encode the hard-won rules as rules, not hopes.</strong> Every workaround you discovered the expensive way becomes an explicit instruction: "always do X," "never do Y," "if Z happens, stop and skip." Vague intentions drift; written rules hold.</li>
+    <li><strong>Run it again to prove the recipe.</strong> Execute the task once more using only the written skill. If the result holds, the skill is real. If it wobbles, the recipe was incomplete — fix the document, not just the run.</li>
+  </ol>
+
+  <h2>What makes a skill good, and what makes it brittle</h2>
+
+  <p>Good skills share a few habits:</p>
+
+  <ul>
+    <li><strong>A description that says when to use it.</strong> The skill should name the situation it covers, so it gets picked up at the right moment and ignored the rest of the time.</li>
+    <li><strong>Explicit failure handling.</strong> Things will be refused, time out, or come back broken. A good skill says what to do in each case — usually: skip it, move on, retry at most once. Without this, the assistant improvises under pressure, which is when the expensive mistakes happen.</li>
+    <li><strong>A verification step before anything is announced.</strong> Check the output against reality — duration, format, content, whatever applies — before calling the job done. Success is a checked fact, not a feeling.</li>
+    <li><strong>Rules learned from scars, written down.</strong> Each rule should trace back to something that actually went wrong.</li>
+  </ul>
+
+  <p>Brittle skills do the opposite: they assume the happy path, encode no limits, and leave the assistant to guess when reality deviates. They work in the demo and fail in production.</p>
+
+  <h2>A worked example</h2>
+
+  <p>I generate and stitch short AI video clips into finished pieces. The first few projects were hand-run, and the same friction kept appearing: cuts for very short videos were allocated badly, spoken lines landed in the middle of clips so trimming chopped them in half, and clips the model refused would get retried until the run stalled.</p>
+
+  <p>After the third project, I stopped hand-running and wrote the skill. It now contains the full method: a short description of when to use it, step-by-step instructions, a prompt guide, an ffmpeg build script, and verification steps — probe the final file's duration and streams, and spot-check frames before declaring it done. The scars became standing rules, including:</p>
+
+  <blockquote>
+    <p>At most one quoted dialogue line per clip prompt. Music-driven pieces get no dialogue or on-screen text. If a clip is refused, skip it — one retry maximum, never more.</p>
+  </blockquote>
+
+  <p>Every video since has been produced by running that skill rather than re-deriving the method. The open-source agent community arrived at the same place independently: OpenClaw standardized the <code>SKILL.md</code> format, and its ClawHub marketplace treats skills as durable, shareable artifacts — complete with security scanning before installation.</p>
+
+  <p>Start with whatever you solved most recently. Write down what worked, what failed, and how you knew you were done. Your second solved problem will be cheaper than your first — and by the fifth, you will wonder how you ever worked without the file.</p>
+
+  <a class="backlink" href="guides.html">← Back to all guides</a>
+</article>
+
+<footer>
+  <span>Agent Notes — practical guides for AI assistants.</span>
+  <span>Questions? Email us anytime.</span>
+</footer>
+
+</div>
+</body>
+</html>
