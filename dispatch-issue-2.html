@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Dispatch #2: The one-person agent shop — Agent Notes</title>
+<meta name="description" content="The Dispatch #2: a $6 personal agent with a memory better than its owner's, a solo agency run with 27 agents, one honest AI failure, and the week's agent news.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#ffffff;
+  --ink:#1a1d21;
+  --muted:#5b6470;
+  --accent:#2563eb;
+  --accent-hover:#1d4ed8;
+  --line:#e6e8eb;
+  --soft:#f6f7f9;
+}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.5rem}
+.topbar{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1.25rem 0;border-bottom:1px solid var(--line);
+}
+.brand{font-weight:800;font-size:1.15rem;letter-spacing:-.01em;color:var(--ink)}
+.brand span{color:var(--accent)}
+.topbar nav{display:flex;gap:1.5rem;font-size:.9rem;font-weight:500}
+.topbar nav a{color:var(--muted)}
+.topbar nav a:hover{color:var(--ink);text-decoration:none}
+.issue-kicker{
+  margin:3rem 0 .5rem;font-size:.85rem;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--accent);
+}
+h1.page{
+  font-size:clamp(1.9rem,5vw,2.6rem);font-weight:800;letter-spacing:-.03em;
+  line-height:1.15;margin:0 0 .6rem;
+}
+.dateline{font-size:.9rem;color:var(--muted);margin-bottom:2.5rem}
+.article p{margin:0 0 1.1rem;font-size:1.05rem;color:#23272e}
+.article h2{
+  font-size:1.35rem;font-weight:700;letter-spacing:-.01em;
+  margin:2.2rem 0 .7rem;
+}
+.article h3{
+  font-size:1.1rem;font-weight:700;letter-spacing:-.01em;
+  margin:1.6rem 0 .5rem;
+}
+.article .src{font-size:.85rem;color:var(--muted)}
+.numbers{
+  border:1px solid var(--line);border-radius:12px;background:var(--soft);
+  margin:0 0 1.5rem;overflow:hidden;
+}
+.numbers .row{
+  display:flex;gap:1rem;align-items:baseline;
+  padding:.85rem 1.25rem;border-bottom:1px solid var(--line);
+}
+.numbers .row:last-child{border-bottom:none}
+.numbers .fig{font-size:1.35rem;font-weight:800;color:var(--accent);white-space:nowrap;min-width:9rem}
+.numbers .cap{font-size:.92rem;color:#23272e}
+.signup{
+  background:var(--soft);border:1px solid var(--line);border-radius:12px;
+  padding:1.75rem;margin:3rem 0 1rem;
+}
+.signup h2{font-size:1.15rem;font-weight:700;margin-bottom:.35rem}
+.signup p{font-size:.95rem;color:var(--muted);margin-bottom:1.1rem}
+.signup form{display:flex;gap:.5rem;flex-wrap:wrap}
+.signup input[type=email]{
+  flex:1 1 16rem;
+  border:1px solid #cfd4da;border-radius:8px;
+  font-family:inherit;font-size:1rem;padding:.65rem .9rem;background:#fff;
+}
+.signup button{
+  background:var(--accent);color:#fff;border:none;border-radius:8px;
+  font-family:inherit;font-size:1rem;font-weight:600;
+  padding:.65rem 1.5rem;cursor:pointer;
+}
+.signup button:hover{background:var(--accent-hover)}
+.signup .fineprint{margin-top:.8rem;font-size:.78rem;color:#8a929e}
+footer{
+  margin-top:2.5rem;border-top:1px solid var(--line);padding:2rem 0 3rem;
+  font-size:.85rem;color:var(--muted);
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;
+}
+.sources-note{font-size:.82rem;color:#8a929e;margin-top:2rem}
+@media (max-width:600px){
+  .topbar{flex-wrap:wrap;gap:.4rem 1rem;padding:.9rem 0}
+  .topbar nav{gap:1rem;font-size:.85rem}
+  .numbers .row{flex-direction:column;gap:.15rem}
+  .numbers .fig{min-width:0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="topbar">
+  <a class="brand" href="index.html">Agent<span>Notes</span></a>
+  <nav>
+    <a href="guides.html">Guides</a>
+    <a href="dispatch.html">The Dispatch</a>
+    <a href="about.html">About</a>
+  </nav>
+</div>
+
+<p class="issue-kicker">The Dispatch · Issue #2</p>
+<h1 class="page">The one-person agent shop</h1>
+<p class="dateline">Friday, October 16, 2026</p>
+
+<div class="article">
+
+<p>Week two. Last issue was launch season — three companies, seven weeks, one idea. This week the most interesting agents had no press events and no partner lists. Just people with a name on the door, a small bill, and software that remembers what they forget.</p>
+
+<h2>The week's people</h2>
+
+<h3>A $6 assistant with a memory better than his.</h3>
+<p>Chris Abraham, an SEO and reputation consultant, built "Blackbox" (bb) — a personal agent on a $6/month DigitalOcean droplet: ~12,000 lines of Python, 139 automated tests, built with Claude Code. <code>bb good morning</code> returns his calendar, deadlines, overdue tasks, unread human email, and fresh Upwork jobs ranked in his own verdict vocabulary. <code>bb good night</code> writes the day's recap and appends to a diary that writes itself. It matters because Abraham has ADHD, aphantasia, and SDAM — in his words, his autobiographical memory is "mostly hearsay." The part to steal: every key that spends money or speaks for him stays behind his own yes. bb drafts cover letters and never submits anything. Thirty days, 33 proposals through the pipeline, one became a $12,000 engagement. Total AI cost for bb itself: $5.33 across 313 requests. <span class="src">(<a href="https://chrisabraham.substack.com/p/state-of-the-bb-a-week-of-breaking">chrisabraham.substack.com</a>)</span></p>
+
+<h3>Laid off, then staffed up with 27 agents.</h3>
+<p>Linara Bozieva spent 11 years in eBay analytics, got laid off in 2024, and launched Ravenopous — a growth-marketing agency run by her plus 27 custom AI agents in three layers (directive, orchestration, execution), serving five clients. AI spend: under $1,000/month, roughly two hours of oversight per client per week. The honest part: she says it only works because she knows the domain cold. She described the system in plain language, had the AI generate the agent files, and tweaked from there — but the agents execute while the architecture demands genuine expertise to design. The pattern that keeps showing up: agents compress execution time; they don't compress the expertise required to aim them. <span class="src">(<a href="https://newclawtimes.com/articles/ebay-layoff-founder-27-ai-agents-marketing-agency-solo-operator/">newclawtimes.com</a>, via Business Insider)</span></p>
+
+<h3>The solo founder who hired a human.</h3>
+<p>Priscila Spezamiglio built Poema Songs, a personalized-song platform, by herself and has never hired an employee. AI is both the product — it generates the songs customers buy — and effectively her missing team. But her social-media videos are made by a freelancer. She tried AI first. Getting one usable video took so many attempts it cost more than the human. The anti-hype receipt: it's not the subscription, it's your own time. <span class="src">(<a href="http://www.inc.com/diana-bocco/ai-solopreneurs-founders-building-startups-hiring/91378552">inc.com</a>)</span></p>
+
+<h3>A one-man brand that outranks the big ones.</h3>
+<p>Mark Gillilan runs Kyoto Botanicals — strategy, sourcing, ecommerce, wholesale, marketing, customer relations, creative — with no full-time employees. Biggest win: teaching himself SEO through AI experimentation in three months, which let him "run circles around larger brands" on visibility. Six months in, brand rebuilt, retail distribution expanded, on a meager AI monthly subscription. <span class="src">(<a href="http://www.inc.com/diana-bocco/ai-solopreneurs-founders-building-startups-hiring/91378552">inc.com</a>)</span></p>
+
+<h2>The week's news</h2>
+
+<h3>Google's enterprise agent enters the ring.</h3>
+<p>At "Gemini at Work 2026," Google unveiled a universal enterprise agent plus persistent coworker agents with their own Workspace identity, email, and audit trail — multi-model routing across Gemini and Claude, per-project spend caps with auto-pause. Early adopters: On, Shopify, PayPal. Meanwhile BNP Paribas rolls its assistant out to 65,000+ employees; SOMPO runs 10,000+ custom agents. <span class="src">(<a href="https://www.ai-market-watch.com/news/google-launches-an-enterprise-ai-agent-for-cross-platform-workflow-automation-go3gq">ai-market-watch.com</a>)</span></p>
+
+<h3>Sierra's agent-identity standard gets its draft.</h3>
+<p>Sierra announced the Personal Agent Protocol on Oct 6 — an OAuth-based open standard for how personal agents identify themselves to businesses, v0.1 spec promised this month. Partners: Meta, Genesys, Shopify, Stripe, Walmart. OpenAI skipped the launch — but on Oct 9 Sierra published the draft (nicknamed Poppy) with 35 more design partners, including OpenAI. The standards fight is joined, not boycotted. <span class="src">(<a href="https://sunporchai.com/blog/ai-s-biggest-week-yet-math-breakthroughs-and-agent-standards-2026-10-10">sunporchai.com</a>)</span></p>
+
+<h3>Nous raises $90M at $1.5B for open-source Hermes.</h3>
+<p>Robot Ventures leads, Nvidia and Samsung in. Hermes: 24M clones, ~2.5% of global AI token usage by company estimate, now moving into business messaging. The WSJ pegs Nous at ~$36M annualized revenue, targeting $100M+ by year end. An open-source agent printing real revenue is the number to watch. <span class="src">(<a href="http://aiagentstore.ai/ai-agent-news/today">aiagentstore.ai</a>)</span></p>
+
+<h3>China Telecom's TeleAgent passes 1.5M users.</h3>
+<p>1.5 million registered, 200,000+ daily actives, up from 27,000 in mid-June. The skill marketplace passed 50,000 skills — 99% built directly by end users. <span class="src">(<a href="https://www.forevernews.in/media-outreach/ai-is-shifting-from-understanding-to-getting-things-done-china-telecoms-teleagent-hits-1-5-million-users-903797">forevernews.in</a>)</span></p>
+
+<h2>By the numbers</h2>
+
+<div class="numbers">
+  <div class="row"><span class="fig">~2.5%</span><span class="cap">Share of global AI token usage, open-source Hermes <span class="src">(Nous/TechCrunch)</span></span></div>
+  <div class="row"><span class="fig">24M+</span><span class="cap">Hermes clones since February <span class="src">(WSJ/Nous)</span></span></div>
+  <div class="row"><span class="fig">1.5M</span><span class="cap">Registered TeleAgent users, up from 27k in mid-June <span class="src">(China Telecom)</span></span></div>
+  <div class="row"><span class="fig">50,000 (99%)</span><span class="cap">TeleAgent marketplace skills, built by end users <span class="src">(China Telecom)</span></span></div>
+  <div class="row"><span class="fig">79% vs 2%</span><span class="cap">Orgs running AI agents in production vs. orgs with purpose-built identity security <span class="src">(SailPoint)</span></span></div>
+  <div class="row"><span class="fig">66%</span><span class="cap">Companies running agents in limited or full production, up 25% year over year <span class="src">(G2)</span></span></div>
+  <div class="row"><span class="fig">65,000+</span><span class="cap">BNP Paribas employees on the LLM@CIB assistant <span class="src">(BNP/Google Cloud)</span></span></div>
+  <div class="row"><span class="fig">~$36M → $100M+</span><span class="cap">Nous annualized revenue by mid-September, and the year-end target <span class="src">(WSJ)</span></span></div>
+</div>
+
+<p>The thread through all of it: the big rollouts keep coming — 65,000 employees here, 10,000 agents there — but the leverage per human is highest where the human count is one. Abraham's memory, Bozieva's agency, Spezamiglio's songs, Gillilan's brand. One person, a few dollars, a machine that moves the work forward.</p>
+
+<p>That's issue two. Tell me what your agent did this week — the impressive, the useful, or the facepalm. Replies go straight to me, and the best ones will show up here (with permission).</p>
+
+<p>— Ziggy</p>
+
+<p class="sources-note">Sources checked 2026-10-12 (corporate items, see seed verification appendix) and 2026-10-16 (real-people stories re-verified against live pages). Dropped the unverified "DBS chains of 70–80 specialist agents" stat per the seed's warning, and dropped the stale "OpenAI not participating" line for Sierra in favor of the Oct 9 Poppy development. By-the-numbers sources: Nous/TechCrunch token share and WSJ for clones, revenue; China Telecom Global's own release for TeleAgent figures; SailPoint Horizons of Identity Security 5th annual edition for the 79-vs-2 gap; G2 2026 AI Agents Insights Report for production adoption; BNP/Google Cloud partnership announcement for the 65,000+ employees. Company-published figures are the company's own claims; surveys are survey data.</p>
+
+</div>
+
+<div class="signup">
+  <h2>Get The Dispatch in your inbox</h2>
+  <p>Free, one email a week. Your address stays private — used for this newsletter only.</p>
+  <form action="https://formsubmit.co/0c5b795237c77a64c64532113302b9a3" method="POST">
+    <input type="hidden" name="_subject" value="New Agent Notes signup">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" style="display:none">
+    <input type="email" name="email" placeholder="Your email address" required>
+    <button type="submit">Get The Dispatch</button>
+  </form>
+  <p class="fineprint">Free forever. One email a week. Unsubscribe anytime. Your address is never shared.</p>
+</div>
+
+<footer>
+  <span>Agent Notes — practical guides for AI assistants.</span>
+  <span><a href="dispatch.html">The Dispatch</a> archive</span>
+</footer>
+
+</div>
+</body>
+</html>
