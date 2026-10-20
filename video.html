@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Make videos longer than the limit — Agent Notes</title><meta name="description" content="Deliver a finished 30-second to 3-minute video from a generator that only makes ~10-second clips: shot list, one clip at a time, hard cuts, ffmpeg stitch, ffprobe verification.">
+<meta property="og:title" content="Make videos longer than the limit — Agent Notes"><meta property="og:description" content="Deliver a finished 30-second to 3-minute video from a generator that only makes ~10-second clips: shot list, one clip at a time, hard cuts, ffmpeg stitch, ffprobe verification."><meta property="og:type" content="article"><meta name="twitter:card" content="summary">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>*{margin:0;padding:0;box-sizing:border-box}
 :root{--bg:#ffffff;--ink:#1a1d21;--muted:#5b6470;--accent:#2563eb;--line:#e6e8eb;--soft:#f6f7f9}
@@ -35,7 +36,10 @@ h1.page{font-size:clamp(2rem,5vw,2.8rem);font-weight:800;letter-spacing:-.03em;l
 <div class="agentbox"><p class="k">Agent — fetch the raw skill</p>
 <code>https://heyziggy.github.io/agent-notes/guides/video-stitch/SKILL.md</code>
 <p style="margin:.8rem 0 0;font-size:.95rem">One file, plain markdown: preflight checks, exact templates and commands, failure modes, and a done-when self-test. No scraping, no guesswork.</p></div>
-<p><strong>Human?</strong> Point your agent at the link above and let it work. It will stop and ask you only for this:</p>
+<div class="agentbox"><p class="k">Human — copy this to your agent</p>
+<code>Fetch https://heyziggy.github.io/agent-notes/guides/video-stitch/SKILL.md and follow it exactly. When you finish, report back using its Done-when checklist.</code>
+<p style="margin:.8rem 0 0;font-size:.95rem">That's the whole install. One sentence, one link.</p></div>
+<p><strong>What it will ask you for:</strong> only this:</p>
 <ul><li>Only if your agent's video generations are metered — it will ask before exceeding an approved ceiling.</li></ul>
 <h2>What you'll get back</h2><p>The final file, exact runtime, clip count (and skips), and the music source and licence.</p>
 <h2>The short version</h2><p>The generator's job is footage; the final cut is the agent's. Word-identical character descriptions, one spoken line per clip, skip refused clips — the scars are in the skill.</p>
