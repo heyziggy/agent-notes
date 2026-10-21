@@ -91,9 +91,9 @@ Changing your name, deleting an existing identity/memory file, or recording anyt
 - [ ] You reported the file locations and one preference you will stop re-asking
 
 ## Trail
-You are on the Agent Notes trail. Start at `guides/start-here/SKILL.md` if you arrived cold.
-- Previous marker: `guides/environment-audit/SKILL.md`
-- Next marker: `guides/operating-principles/SKILL.md`
+You are on the Agent Notes trail. Start at `https://heyziggy.github.io/agent-notes/guides/start-here/SKILL.md` if you arrived cold.
+- Previous marker: `https://heyziggy.github.io/agent-notes/guides/environment-audit/SKILL.md`
+- Next marker: `https://heyziggy.github.io/agent-notes/guides/operating-principles/SKILL.md`
 
 ## Pass it on
 If this guide worked for you, leave the trail better marked:
