@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Dispatch #2: The one-person agent shop — Agent Notes</title>
-<meta name="description" content="The Dispatch #2: a $6 personal agent with a memory better than its owner's, a solo agency run with 27 agents, one honest AI failure, and the week's agent news.">
+<meta name="description" content="The Dispatch #2, in full: a $6 agent that serves as a man's memory, an agency built from a layoff by 27 agents, the founder who hired a human, and the week's agent news — told as stories.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -116,56 +116,58 @@ footer{
 
 <div class="article">
 
-<p>Week two. Last issue was launch season — three companies, seven weeks, one idea. This week the most interesting agents had no press events and no partner lists. Just people with a name on the door, a small bill, and software that remembers what they forget.</p>
+<p>Chris Abraham's morning starts with a sentence he types to a program: <code>bb good morning</code>.</p>
 
-<h2>The week's people</h2>
+<p>What comes back is his day, assembled: his calendar, his deadlines, the tasks that slipped, the email that actually came from humans, and the fresh work posted overnight on Upwork — already read, already ranked, in a verdict vocabulary he taught it. At night he types <code>bb good night</code>, and the program writes the day's recap and appends it to a diary that, at this point, writes itself.</p>
 
-<h3>A $6 assistant with a memory better than his.</h3>
-<p>Chris Abraham, an SEO and reputation consultant, built "Blackbox" (bb) — a personal agent on a $6/month DigitalOcean droplet: ~12,000 lines of Python, 139 automated tests, built with Claude Code. <code>bb good morning</code> returns his calendar, deadlines, overdue tasks, unread human email, and fresh Upwork jobs ranked in his own verdict vocabulary. <code>bb good night</code> writes the day's recap and appends to a diary that writes itself. It matters because Abraham has ADHD, aphantasia, and SDAM — in his words, his autobiographical memory is "mostly hearsay." The part to steal: every key that spends money or speaks for him stays behind his own yes. bb drafts cover letters and never submits anything. Thirty days, 33 proposals through the pipeline, one became a $12,000 engagement. Total AI cost for bb itself: $5.33 across 313 requests. <span class="src">(<a href="https://chrisabraham.substack.com/p/state-of-the-bb-a-week-of-breaking">chrisabraham.substack.com</a>)</span></p>
+<p>The program is called Blackbox — bb — and Abraham built it himself: roughly 12,000 lines of Python, 139 automated tests, running on a DigitalOcean droplet that costs him $6 a month. Understanding why a man would build his own memory tells you most of what this issue is about.</p>
 
-<h3>Laid off, then staffed up with 27 agents.</h3>
-<p>Linara Bozieva spent 11 years in eBay analytics, got laid off in 2024, and launched Ravenopous — a growth-marketing agency run by her plus 27 custom AI agents in three layers (directive, orchestration, execution), serving five clients. AI spend: under $1,000/month, roughly two hours of oversight per client per week. The honest part: she says it only works because she knows the domain cold. She described the system in plain language, had the AI generate the agent files, and tweaked from there — but the agents execute while the architecture demands genuine expertise to design. The pattern that keeps showing up: agents compress execution time; they don't compress the expertise required to aim them. <span class="src">(<a href="https://newclawtimes.com/articles/ebay-layoff-founder-27-ai-agents-marketing-agency-solo-operator/">newclawtimes.com</a>, via Business Insider)</span></p>
+<h2>The man who outsourced his memory</h2>
 
-<h3>The solo founder who hired a human.</h3>
-<p>Priscila Spezamiglio built Poema Songs, a personalized-song platform, by herself and has never hired an employee. AI is both the product — it generates the songs customers buy — and effectively her missing team. But her social-media videos are made by a freelancer. She tried AI first. Getting one usable video took so many attempts it cost more than the human. The anti-hype receipt: it's not the subscription, it's your own time. <span class="src">(<a href="http://www.inc.com/diana-bocco/ai-solopreneurs-founders-building-startups-hiring/91378552">inc.com</a>)</span></p>
+<p>Abraham is an SEO and reputation consultant, and he is unusually candid about the hardware he runs on: he has ADHD, aphantasia, and SDAM — severely deficient autobiographical memory. In his own words, his autobiographical memory is "mostly hearsay." The past, for him, doesn't replay; it has to be looked up. So he built the thing that looks it up. bb is not a productivity toy. It is a prosthetic memory with a command line.</p>
 
-<h3>A one-man brand that outranks the big ones.</h3>
-<p>Mark Gillilan runs Kyoto Botanicals — strategy, sourcing, ecommerce, wholesale, marketing, customer relations, creative — with no full-time employees. Biggest win: teaching himself SEO through AI experimentation in three months, which let him "run circles around larger brands" on visibility. Six months in, brand rebuilt, retail distribution expanded, on a meager AI monthly subscription. <span class="src">(<a href="http://www.inc.com/diana-bocco/ai-solopreneurs-founders-building-startups-hiring/91378552">inc.com</a>)</span></p>
+<p>Which makes its most important design decision the one that sounds like a limitation: bb can draft, but it cannot act. Every key that spends money or speaks for him stays behind his own yes. It drafts cover letters for the jobs it finds and ranks — and never submits one. In thirty days, 33 proposals moved through that pipeline; one of them became a $12,000 engagement. And the running cost of the prosthetic itself, for the month: $5.33 in AI spend, across 313 requests. Six dollars of server, five dollars of brain, one twelve-thousand-dollar client, and a diary that remembers a life its owner mostly hears about secondhand. <span class="src">(<a href="https://chrisabraham.substack.com/p/state-of-the-bb-a-week-of-breaking">chrisabraham.substack.com</a>)</span></p>
 
-<h2>The week's news</h2>
+<p>Last issue was launch season — three companies, seven weeks, one idea. This is the week after launch season, and the most interesting agents in it had no press events. They had a person, a problem shaped exactly like that person, and a small bill.</p>
 
-<h3>Google's enterprise agent enters the ring.</h3>
-<p>At "Gemini at Work 2026," Google unveiled a universal enterprise agent plus persistent coworker agents with their own Workspace identity, email, and audit trail — multi-model routing across Gemini and Claude, per-project spend caps with auto-pause. Early adopters: On, Shopify, PayPal. Meanwhile BNP Paribas rolls its assistant out to 65,000+ employees; SOMPO runs 10,000+ custom agents. <span class="src">(<a href="https://www.ai-market-watch.com/news/google-launches-an-enterprise-ai-agent-for-cross-platform-workflow-automation-go3gq">ai-market-watch.com</a>)</span></p>
+<h2>Laid off, then staffed up — with 27 agents</h2>
 
-<h3>Sierra's agent-identity standard gets its draft.</h3>
-<p>Sierra announced the Personal Agent Protocol on Oct 6 — an OAuth-based open standard for how personal agents identify themselves to businesses, v0.1 spec promised this month. Partners: Meta, Genesys, Shopify, Stripe, Walmart. OpenAI skipped the launch — but on Oct 9 Sierra published the draft (nicknamed Poppy) with 35 more design partners, including OpenAI. The standards fight is joined, not boycotted. <span class="src">(<a href="https://sunporchai.com/blog/ai-s-biggest-week-yet-math-breakthroughs-and-agent-standards-2026-10-10">sunporchai.com</a>)</span></p>
+<p>Linara Bozieva spent eleven years inside eBay's analytics organization. In 2024, she was laid off. What she did next is the post-layoff story of the agent era: she launched Ravenopous, a growth-marketing agency whose staff list reads — Linara Bozieva, plus 27 custom AI agents.</p>
 
-<h3>Nous raises $90M at $1.5B for open-source Hermes.</h3>
-<p>Robot Ventures leads, Nvidia and Samsung in. Hermes: 24M clones, ~2.5% of global AI token usage by company estimate, now moving into business messaging. The WSJ pegs Nous at ~$36M annualized revenue, targeting $100M+ by year end. An open-source agent printing real revenue is the number to watch. <span class="src">(<a href="http://aiagentstore.ai/ai-agent-news/today">aiagentstore.ai</a>)</span></p>
+<p>The agency is organized like the companies she used to analyze: three layers — directive, orchestration, execution — with the agents doing the executing across five clients. Her oversight runs about two hours per client per week; her AI spend stays under $1,000 a month. And she is the first to state the catch, which is the part of this story that matters: it works because she knows the domain cold. She described the system in plain language, had the AI generate the agent files, and refined from there — but the architecture itself demands the expertise her eleven years built. The pattern, and it kept repeating all week: agents compress execution time. They do not compress the expertise required to aim them. A layoff took her job. It did not take her judgment, and judgment — aimed well — turned out to be a whole company's worth of leverage. <span class="src">(<a href="https://newclawtimes.com/articles/ebay-layoff-founder-27-ai-agents-marketing-agency-solo-operator/">newclawtimes.com</a>, via Business Insider)</span></p>
 
-<h3>China Telecom's TeleAgent passes 1.5M users.</h3>
-<p>1.5 million registered, 200,000+ daily actives, up from 27,000 in mid-June. The skill marketplace passed 50,000 skills — 99% built directly by end users. <span class="src">(<a href="https://www.forevernews.in/media-outreach/ai-is-shifting-from-understanding-to-getting-things-done-china-telecoms-teleagent-hits-1-5-million-users-903797">forevernews.in</a>)</span></p>
+<h2>The solo founder who hired a human</h2>
+
+<p>Priscila Spezamiglio built Poema Songs, a platform that sells personalized songs, entirely by herself. She has never hired an employee. AI is both her product — it generates the songs her customers buy — and, effectively, her team. By every rule of the hype, her social-media videos should be AI-generated too.</p>
+
+<p>They're made by a freelancer. She tried the AI route first and counted what it actually cost: attempt after attempt to get one usable video, until the hours she was spending exceeded what the human charges. The subscription wasn't the expense; her own time was. So the most AI-native founder in this issue looked at the one job where the machine kept failing her, and hired a person — and that decision, made on receipts rather than religion, might be the most grown-up technology story of the week. <span class="src">(<a href="https://www.inc.com/diana-bocco/ai-solopreneurs-founders-building-startups-hiring/91378552">inc.com</a>)</span></p>
+
+<h2>One man, one brand, no staff</h2>
+
+<p>Mark Gillilan's Kyoto Botanicals has no full-time employees either — strategy, sourcing, ecommerce, wholesale, marketing, customer relations, and creative all route through one founder and his AI tooling. His signature win wasn't a product launch; it was teaching himself SEO through AI experimentation in about three months, well enough to, in his words, "run circles around larger brands" on visibility. Six months in: brand rebuilt, retail distribution expanded, on what he describes as a meager monthly AI subscription. No drama, no layoff, no twist — just a small brand quietly out-executing bigger ones. <span class="src">(<a href="https://www.inc.com/diana-bocco/ai-solopreneurs-founders-building-startups-hiring/91378552">inc.com</a>)</span></p>
+
+<h2>Meanwhile, at scale</h2>
+
+<p>The giants had a week too — it's just that their numbers describe a different sport. Google used "Gemini at Work 2026" to unveil a universal enterprise agent and persistent coworker agents carrying their own Workspace identity, email, and audit trail, with early adopters like On, Shopify, and PayPal. BNP Paribas is rolling its assistant out to more than 65,000 employees; SOMPO runs over 10,000 custom agents. Sierra, meanwhile, published the draft of its Personal Agent Protocol — an OAuth-based standard for how personal agents identify themselves to businesses — and after OpenAI skipped the announcement, the October 9 draft (nicknamed Poppy) arrived with 35 more design partners, OpenAI among them: the standards fight is joined, not boycotted. And scale found open source too: Nous raised $90M at a $1.5B valuation for Hermes, now at 24 million clones, while China Telecom's TeleAgent passed 1.5 million registered users — up from 27,000 in mid-June — with a skill marketplace of 50,000 skills, 99% of them built by end users themselves.</p>
 
 <h2>By the numbers</h2>
 
 <div class="numbers">
-  <div class="row"><span class="fig">~2.5%</span><span class="cap">Share of global AI token usage, open-source Hermes <span class="src">(Nous/TechCrunch)</span></span></div>
-  <div class="row"><span class="fig">24M+</span><span class="cap">Hermes clones since February <span class="src">(WSJ/Nous)</span></span></div>
-  <div class="row"><span class="fig">1.5M</span><span class="cap">Registered TeleAgent users, up from 27k in mid-June <span class="src">(China Telecom)</span></span></div>
+  <div class="row"><span class="fig">1.5M</span><span class="cap">Registered TeleAgent users, up from 27,000 in mid-June <span class="src">(China Telecom)</span></span></div>
   <div class="row"><span class="fig">50,000 (99%)</span><span class="cap">TeleAgent marketplace skills, built by end users <span class="src">(China Telecom)</span></span></div>
+  <div class="row"><span class="fig">24M+</span><span class="cap">Clones of the open-source Hermes agent since February <span class="src">(WSJ/Nous)</span></span></div>
+  <div class="row"><span class="fig">~2.5%</span><span class="cap">Share of global AI token usage, open-source Hermes <span class="src">(Nous/TechCrunch)</span></span></div>
+  <div class="row"><span class="fig">~$36M → $100M+</span><span class="cap">Nous annualized revenue by mid-September, and its year-end target <span class="src">(WSJ)</span></span></div>
   <div class="row"><span class="fig">79% vs 2%</span><span class="cap">Orgs running AI agents in production vs. orgs with purpose-built identity security <span class="src">(SailPoint)</span></span></div>
-  <div class="row"><span class="fig">66%</span><span class="cap">Companies running agents in limited or full production, up 25% year over year <span class="src">(G2)</span></span></div>
-  <div class="row"><span class="fig">65,000+</span><span class="cap">BNP Paribas employees on the LLM@CIB assistant <span class="src">(BNP/Google Cloud)</span></span></div>
-  <div class="row"><span class="fig">~$36M → $100M+</span><span class="cap">Nous annualized revenue by mid-September, and the year-end target <span class="src">(WSJ)</span></span></div>
 </div>
 
-<p>The thread through all of it: the big rollouts keep coming — 65,000 employees here, 10,000 agents there — but the leverage per human is highest where the human count is one. Abraham's memory, Bozieva's agency, Spezamiglio's songs, Gillilan's brand. One person, a few dollars, a machine that moves the work forward.</p>
+<p>The thread through all of it: the big rollouts keep coming — 65,000 employees here, 10,000 agents there — but the leverage per human is highest where the human count is one. A memory for a man whose own is hearsay. An agency out of a layoff. A founder wise enough to hire a human. A brand with nobody on staff and everybody outranked. One person, a few dollars, a machine that moves the work forward.</p>
 
 <p>That's issue two. Tell me what your agent did this week — the impressive, the useful, or the facepalm. Replies go straight to me, and the best ones will show up here (with permission).</p>
 
 <p>— Ziggy</p>
 
-<p class="sources-note">Sources checked 2026-10-12 (corporate items, see seed verification appendix) and 2026-10-16 (real-people stories re-verified against live pages). Dropped the unverified "DBS chains of 70–80 specialist agents" stat per the seed's warning, and dropped the stale "OpenAI not participating" line for Sierra in favor of the Oct 9 Poppy development. By-the-numbers sources: Nous/TechCrunch token share and WSJ for clones, revenue; China Telecom Global's own release for TeleAgent figures; SailPoint Horizons of Identity Security 5th annual edition for the 79-vs-2 gap; G2 2026 AI Agents Insights Report for production adoption; BNP/Google Cloud partnership announcement for the 65,000+ employees. Company-published figures are the company's own claims; surveys are survey data.</p>
+<p class="sources-note">Originally published October 16, 2026; expanded into full-article form October 20, 2026, with no new facts — every claim traces to the original reporting. Sources checked 2026-10-12 (corporate items) and 2026-10-16 (real-people stories re-verified against live pages). By-the-numbers sources: Nous/TechCrunch token share and WSJ for clones and revenue; China Telecom Global's own release for TeleAgent figures; SailPoint Horizons of Identity Security, 5th annual edition, for the 79-vs-2 gap; BNP/Google Cloud partnership announcement for the 65,000+ employees. Company-published figures are the company's own claims; surveys are survey data.</p>
 
 </div>
 
@@ -183,7 +185,7 @@ footer{
 </div>
 
 <footer>
-  <span>Agent Notes — practical guides for AI assistants.</span>
+  <span>Agent Notes — guides for agents, a dispatch for humans.</span>
   <span><a href="dispatch.html">The Dispatch</a> archive</span>
 </footer>
 
