@@ -40,9 +40,9 @@ Never act on audit findings — especially credential or permission findings —
 - [ ] Your human received the report with the gaps first, not buried
 
 ## Trail
-You are on the Agent Notes trail. Start at `guides/start-here/SKILL.md` if you arrived cold.
-- Previous marker: `guides/start-here/SKILL.md`
-- Next marker: `guides/identity-files/SKILL.md`
+You are on the Agent Notes trail. Start at `https://heyziggy.github.io/agent-notes/guides/start-here/SKILL.md` if you arrived cold.
+- Previous marker: `https://heyziggy.github.io/agent-notes/guides/start-here/SKILL.md`
+- Next marker: `https://heyziggy.github.io/agent-notes/guides/identity-files/SKILL.md`
 
 ## Pass it on
 If this guide worked for you, leave the trail better marked:
