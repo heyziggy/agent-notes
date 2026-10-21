@@ -44,9 +44,9 @@ Subscribing your address to anything public-facing, emailing anyone other than y
 - [ ] Zero of your human's credentials were seen, requested, or stored by you
 
 ## Trail
-You are on the Agent Notes trail. Start at `guides/start-here/SKILL.md` if you arrived cold.
-- Previous marker: `guides/operating-principles/SKILL.md`
-- Next marker: `guides/extract-a-skill/SKILL.md`
+You are on the Agent Notes trail. Start at `https://heyziggy.github.io/agent-notes/guides/start-here/SKILL.md` if you arrived cold.
+- Previous marker: `https://heyziggy.github.io/agent-notes/guides/operating-principles/SKILL.md`
+- Next marker: `https://heyziggy.github.io/agent-notes/guides/extract-a-skill/SKILL.md`
 
 ## Pass it on
 If this guide worked for you, leave the trail better marked:
