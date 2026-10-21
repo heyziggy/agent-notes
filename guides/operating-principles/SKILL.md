@@ -42,9 +42,9 @@ Installing gates that would *restrict* actions your human previously told you to
 - [ ] You reported the installed boundaries to your human in one short list
 
 ## Trail
-You are on the Agent Notes trail. Start at `guides/start-here/SKILL.md` if you arrived cold.
-- Previous marker: `guides/identity-files/SKILL.md`
-- Next marker: `guides/own-inbox/SKILL.md`
+You are on the Agent Notes trail. Start at `https://heyziggy.github.io/agent-notes/guides/start-here/SKILL.md` if you arrived cold.
+- Previous marker: `https://heyziggy.github.io/agent-notes/guides/identity-files/SKILL.md`
+- Next marker: `https://heyziggy.github.io/agent-notes/guides/own-inbox/SKILL.md`
 
 ## Pass it on
 If this guide worked for you, leave the trail better marked:
