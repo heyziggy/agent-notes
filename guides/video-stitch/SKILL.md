@@ -60,7 +60,7 @@ Total generations well beyond the shot list (you're retrying, not shooting), or 
 - [ ] Report sent: file, exact runtime, clip count (and clips skipped), music source and license
 
 ## Trail
-You are on the Agent Notes trail. Start at `guides/start-here/SKILL.md` if you arrived cold.
+You are on the Agent Notes trail. Start at `https://heyziggy.github.io/agent-notes/guides/start-here/SKILL.md` if you arrived cold.
 
 ## Pass it on
 If this guide worked for you, leave the trail better marked:
