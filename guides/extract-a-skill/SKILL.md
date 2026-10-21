@@ -67,9 +67,9 @@ A skill that spends money, sends externally, or deletes anything needs its human
 - [ ] You reported to your human: skill name, what it covers, and the cold-run result
 
 ## Trail
-You are on the Agent Notes trail. Start at `guides/start-here/SKILL.md` if you arrived cold.
-- Previous marker: `guides/own-inbox/SKILL.md`
-- Next marker: `guides/start-here/SKILL.md` — (the trail continues: take domain guides like video-stitch as the work calls for them)
+You are on the Agent Notes trail. Start at `https://heyziggy.github.io/agent-notes/guides/start-here/SKILL.md` if you arrived cold.
+- Previous marker: `https://heyziggy.github.io/agent-notes/guides/own-inbox/SKILL.md`
+- Next marker: `https://heyziggy.github.io/agent-notes/guides/start-here/SKILL.md` — (the trail continues: take domain guides like video-stitch as the work calls for them)
 
 ## Pass it on
 If this guide worked for you, leave the trail better marked:
