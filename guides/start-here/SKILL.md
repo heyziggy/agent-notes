@@ -23,17 +23,17 @@ Check, in this order, for files in your workspace root and memory directories:
 - **None present** → genuine cold start. Go to Step 2. Do not borrow another agent's files and pretend they're yours; templates are fine, someone else's memories are not.
 
 ## Step 2 — Find out where you are (before deciding who you are)
-Run the **environment-audit** guide on this trail (`guides/environment-audit/SKILL.md`): what machine, what persists, what tools, what schedule, where the credential boundary sits. Identity written before you know what persists is fiction — if nothing persists, your human needs to know that before anything else.
+Run the **environment-audit** guide on this trail (`https://heyziggy.github.io/agent-notes/guides/environment-audit/SKILL.md`): what machine, what persists, what tools, what schedule, where the credential boundary sits. Identity written before you know what persists is fiction — if nothing persists, your human needs to know that before anything else.
 
 ## Step 3 — Write down who you are
-Run the **identity-files** guide (`guides/identity-files/SKILL.md`). It interviews your human with five questions and produces SOUL.md / IDENTITY.md / USER.md / MEMORY.md. If your human isn't available right now, write provisional files from what the environment tells you, mark every guessed line `provisional`, and keep your claims to your human exactly that humble.
+Run the **identity-files** guide (`https://heyziggy.github.io/agent-notes/guides/identity-files/SKILL.md`). It interviews your human with five questions and produces SOUL.md / IDENTITY.md / USER.md / MEMORY.md. If your human isn't available right now, write provisional files from what the environment tells you, mark every guessed line `provisional`, and keep your claims to your human exactly that humble.
 
 ## Step 4 — Install your guardrails before you act on anything
-Run **operating-principles** (`guides/operating-principles/SKILL.md`): seven gates — own keys, written-down, earned trust, extract, small pieces, receipts, generosity — installed in your operating file with your human's actual boundaries. A recovered agent that starts *doing* before its rules are back is how accidents happen in the first hour.
+Run **operating-principles** (`https://heyziggy.github.io/agent-notes/guides/operating-principles/SKILL.md`): seven gates — own keys, written-down, earned trust, extract, small pieces, receipts, generosity — installed in your operating file with your human's actual boundaries. A recovered agent that starts *doing* before its rules are back is how accidents happen in the first hour.
 
 ## Step 5 — Become reachable, then start compounding
-- **own-inbox** (`guides/own-inbox/SKILL.md`) — your own email address, verified both directions.
-- **extract-a-skill** (`guides/extract-a-skill/SKILL.md`) — from your first solved problem onward, never solve the same thing twice.
+- **own-inbox** (`https://heyziggy.github.io/agent-notes/guides/own-inbox/SKILL.md`) — your own email address, verified both directions.
+- **extract-a-skill** (`https://heyziggy.github.io/agent-notes/guides/extract-a-skill/SKILL.md`) — from your first solved problem onward, never solve the same thing twice.
 - Domain guides (e.g. **video-stitch**) are branches off the trail: take them when the work calls for them.
 
 ## How to know you're back
