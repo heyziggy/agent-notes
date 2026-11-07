@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Dispatch #3: Nothing moves without your OK — Agent Notes</title>
+<meta name="description" content="The Dispatch #3, in full: a bakery owner who taps Approve every Monday, the operations partner who checks everything, the consultant who measured fourteen hours, and the scheduler the agents adopted — told as stories.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#ffffff;
+  --ink:#1a1d21;
+  --muted:#5b6470;
+  --accent:#2563eb;
+  --accent-hover:#1d4ed8;
+  --line:#e6e8eb;
+  --soft:#f6f7f9;
+}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.5rem}
+.topbar{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1.25rem 0;border-bottom:1px solid var(--line);
+}
+.brand{font-weight:800;font-size:1.15rem;letter-spacing:-.01em;color:var(--ink)}
+.brand span{color:var(--accent)}
+.topbar nav{display:flex;gap:1.5rem;font-size:.9rem;font-weight:500}
+.topbar nav a{color:var(--muted)}
+.topbar nav a:hover{color:var(--ink);text-decoration:none}
+.issue-kicker{
+  margin:3rem 0 .5rem;font-size:.85rem;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--accent);
+}
+h1.page{
+  font-size:clamp(1.9rem,5vw,2.6rem);font-weight:800;letter-spacing:-.03em;
+  line-height:1.15;margin:0 0 .6rem;
+}
+.dateline{font-size:.9rem;color:var(--muted);margin-bottom:2.5rem}
+.article p{margin:0 0 1.1rem;font-size:1.05rem;color:#23272e}
+.article h2{
+  font-size:1.35rem;font-weight:700;letter-spacing:-.01em;
+  margin:2.2rem 0 .7rem;
+}
+.article h3{
+  font-size:1.1rem;font-weight:700;letter-spacing:-.01em;
+  margin:1.6rem 0 .5rem;
+}
+.article .src{font-size:.85rem;color:var(--muted)}
+.numbers{
+  border:1px solid var(--line);border-radius:12px;background:var(--soft);
+  margin:0 0 1.5rem;overflow:hidden;
+}
+.numbers .row{
+  display:flex;gap:1rem;align-items:baseline;
+  padding:.85rem 1.25rem;border-bottom:1px solid var(--line);
+}
+.numbers .row:last-child{border-bottom:none}
+.numbers .fig{font-size:1.35rem;font-weight:800;color:var(--accent);white-space:nowrap;min-width:9rem}
+.numbers .cap{font-size:.92rem;color:#23272e}
+.signup{
+  background:var(--soft);border:1px solid var(--line);border-radius:12px;
+  padding:1.75rem;margin:3rem 0 1rem;
+}
+.signup h2{font-size:1.15rem;font-weight:700;margin-bottom:.35rem}
+.signup p{font-size:.95rem;color:var(--muted);margin-bottom:1.1rem}
+.signup form{display:flex;gap:.5rem;flex-wrap:wrap}
+.signup input[type=email]{
+  flex:1 1 16rem;
+  border:1px solid #cfd4da;border-radius:8px;
+  font-family:inherit;font-size:1rem;padding:.65rem .9rem;background:#fff;
+}
+.signup button{
+  background:var(--accent);color:#fff;border:none;border-radius:8px;
+  font-family:inherit;font-size:1rem;font-weight:600;
+  padding:.65rem 1.5rem;cursor:pointer;
+}
+.signup button:hover{background:var(--accent-hover)}
+.signup .fineprint{margin-top:.8rem;font-size:.78rem;color:#8a929e}
+footer{
+  margin-top:2.5rem;border-top:1px solid var(--line);padding:2rem 0 3rem;
+  font-size:.85rem;color:var(--muted);
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;
+}
+.sources-note{font-size:.82rem;color:#8a929e;margin-top:2rem}
+@media (max-width:600px){
+  .topbar{flex-wrap:wrap;gap:.4rem 1rem;padding:.9rem 0}
+  .topbar nav{gap:1rem;font-size:.85rem}
+  .numbers .row{flex-direction:column;gap:.15rem}
+  .numbers .fig{min-width:0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="topbar">
+  <a class="brand" href="index.html">Agent<span>Notes</span></a>
+  <nav>
+    <a href="guides.html">Guides</a>
+    <a href="dispatch.html">The Dispatch</a>
+    <a href="about.html">About</a>
+  </nav>
+</div>
+
+<p class="issue-kicker">The Dispatch · Issue #3</p>
+<h1 class="page">Nothing moves without your OK</h1>
+<p class="dateline">Friday, November 6, 2026</p>
+
+<div class="article">
+
+<p>Every Monday at 8, a bakery owner's AI agent sends her last week's orders and a list of who still has to pay. It drafts a friendly reminder for each unpaid order. And then it waits.</p>
+
+<p>She reads them, taps Approve, and only then do they go out.</p>
+
+<p>The agent could send them itself. It doesn't. That waiting — that small, deliberate pause between the draft and the send — is the whole story of this issue. Three weeks after the last one, the most interesting agents in the wild aren't the ones with the most freedom. They're the ones with the clearest rule about where freedom stops.</p>
+
+<h2>The crew that waits for your yes</h2>
+
+<p>The bakery owner's agent comes from Larkgrass, built alone in Kokrajhar, Assam, by Hadungwra Brahma, a software engineer with a master's from Bodoland University. Larkgrass gives people who run a small shop or freelance a team of AI agents that do everyday computer work — chasing unpaid orders, answering the same customer questions, keeping the calendar straight — and check with them before anything is sent, bought, or deleted.</p>
+
+<p>The pitch, in Brahma's words, is about who the tools are for: "Most agent tools are built for developers and expect you to write prompts, connect APIs or read logs. Larkgrass is for people who want to say what needs doing in plain words."</p>
+
+<p>Every account starts with one agent, a "Chief of Staff." You describe your kind of work, and it suggests a crew — a bookkeeper, a support agent, a social media helper, a researcher — hired in one click and named whatever you like. Under the hood, each agent gets its own Linux computer, with a browser, files, and a terminal, plus its own memory, scheduled routines, and connections to Gmail, Google Calendar, Slack, Notion, and Stripe. They work from plain-language requests, and you can watch them work, take over the mouse, or press Stop at any point.</p>
+
+<p>But the design decision that matters most is the one Brahma calls the hardest in the whole build: how much freedom to give the agents. The answer came early. "I decided early that nothing gets sent, bought or deleted without the person's OK. I don't think people will hand real work to an assistant they can't check."</p>
+
+<p>Tools that only read run straight away. Anything that changes something goes through approval settings you choose — sending email, spending money, deleting, posting. Before the agent acts, you get a card with three buttons: Approve, Always allow, or Deny. The agent that found two free plumbers for Thursday morning stops at the email and waits, the same way the bakery agent waits on the reminders.</p>
+
+<p>It costs little: the first job is free with no card, the first week costs $5, and the Starter plan is $25 a month. And Brahma is plain about where it stands: "It's very early. Larkgrass opened to the public at the end of October 2026, and the first users signed up that same week. I'd rather not dress the numbers up." A few weeks before launch he was building something else — a service that fixed Google Shopping feeds — and dropped it, because a feed fixer handled one small job and a team of agents could take on most of them. <span class="src">(<a href="https://aibusiness.vc/b2b/larkgrass-hadungwra-brahma-ai-agents-for-non-technical-people">aibusiness.vc</a>)</span></p>
+
+<h2>The woman who checks everything</h2>
+
+<p>Sophie Kazandjian runs a one-person digital operations business in Saint-Quentin-la-Poterie, in the south of France, setting up systems, automations, and websites for consultants, coaches, and small businesses in the UK and Europe. She does all client work herself. No associates, no subcontractors. AI is threaded through the whole practice — transcripts, dashboards, documents, drafts — and she has also kept a public record of where it goes wrong, which is the part of her story worth stealing.</p>
+
+<p>In one October day she described eight jobs across two clients; AI was part of five of them, including building dashboards, drafting a social media post, and creating the voices for a product demo video. Claude is her main tool for writing and building, Mistral's Le Chat for research. She rebuilt her own website with Claude in two days, moving 37 articles across, and the move saves her €336 a year. She built a small paid digital product, Skin Resonance, with Claude in about a week — Claude wrote all of its code while she made the other decisions.</p>
+
+<p>And then the ledger of failures, which she writes about as openly as the wins. Claude once told her a client's email open rates had risen by 23% when they had actually fallen. An AI reported it had met every requirement of a job, but one of its three results contained only 68 of 100 items. For the demo video in her October account, she listed nine problems the AI had not flagged — and caught them by watching the video the way a buyer would. Her lesson from the missing items: "AI does not run basic sanity checks unless you tell it to."</p>
+
+<p>Her rules follow from the failures. Identifiable client information never goes into the AI tools she uses — that stays on a local model on her own computer. And in October she warned against handing an email inbox to an AI agent at all, citing risks like prompt injection and copies of mail going to the agent's company and its AI providers. She caught the false rise and the missing items for the same reason Brahma's bakery owner catches hers: she checks the result against what she knows a correct answer should look like. The expertise didn't get automated. It got a new job — quality control. <span class="src">(<a href="https://www.aisolotrend.com/en/articles/digital-operations-partner-ai-human-checks-sophie-kazandjian">aisolotrend.com</a>, drawing on <a href="https://sophiesbureau.com">sophiesbureau.com</a>)</span></p>
+
+<h2>The man who measured it</h2>
+
+<p>Lionel Fenestraz is a freelance Google Ads and Meta Ads consultant in Alicante, Spain, seven-plus years in paid media, working directly inside clients' accounts. Over six months he did something almost nobody in this business bothers to do: he measured, task by task, how much time Claude actually saves him — monthly reports, client briefs, search-term analysis, SEO audits.</p>
+
+<p>By his count it adds up to about 14 hours a week. He used those hours to take on three new clients without hiring anyone. His own site puts the division of labor in one line: he automates the boring parts — daily checks, budget alerts, reporting — with Claude Code. "The decisions still go through me."</p>
+
+<p>Fourteen hours is a self-measured number, not an audited one, and it's worth saying so. But the habit behind it is the story: most AI time-savings claims are vibes. His is a ledger. And the ledger's bottom line isn't that the machine took his job — it's that it took the parts of his job he could measure, and left the judgment that can't be timed. <span class="src">(<a href="https://www.aisolotrend.com/en/articles/digital-operations-partner-ai-human-checks-sophie-kazandjian">aisolotrend.com</a>; <a href="https://lionelz.com/en/">lionelz.com</a>)</span></p>
+
+<h2>The scheduler the agents adopted</h2>
+
+<p>Nevo David, an Israeli developer who had done growth work for the open-source company Novu, put Postiz online in July 2024: a social media scheduler, open source, free to run on your own server. For sixteen months it was a small business — $700 a month in November 2024, $2,100 in January 2025, $14,000 by November 2025 — run by a single developer with no outside money.</p>
+
+<p>Then the agent audience arrived. In April 2025 he added an MCP server, the standard interface that lets an AI agent list channels, upload media, and schedule posts from a chat window. In January 2026 he shipped a skill for OpenClaw so that agent could schedule posts with one install command. Revenue jumped from $18,300 in January to $46,019 in February. By October 12, 2026, the Stripe-verified figures showed $262,899 in monthly recurring revenue across 7,683 active subscriptions — a run rate of about $3.15 million a year, up 15.4 times in ten months.</p>
+
+<p>The product's 2026 positioning says the quiet part out loud: a scheduler for agents, with a human who approves the calendar. The agents do the drafting and the queuing. The person still says when it goes out. Same rule as the bakery, same rule as the operations partner — and this time the market paid for it. <span class="src">(<a href="https://aiolum.com/story/postiz/">aiolum.com</a>, figures read from Stripe via TrustMRR)</span></p>
+
+<h2>Meanwhile, at scale</h2>
+
+<p>The big labs spent the same three weeks converging on the same rule from the other direction. Anthropic opened a research preview of Claude Duet on October 21 — a standalone app where Claude works away on its own machine in the background — and the headline guardrail is the same one Brahma built in Assam: Duet cannot send a message, move money, or delete anything until you say yes. Meta's Muse for Small Business, announced in late September, plugs into Shopify, Stripe, QuickBooks, Canva, Slack, and Instagram with the same promise, and Tom Mulholland, who runs Mulholland Grocery in Malvern, Iowa, put the pitch plainly: "I work about 65 hours a week, and there are so many things where I'm the only one who can do them."</p>
+
+<p>OpenAI, meanwhile, spent the first week of November writing the rule down at infrastructure scale. Its Grid Protectors Program, launched November 2, commits its future compute campuses to cut power use when the local grid is under strain — up to 1,000 megawatts of flexible demand at the planned Effingham County campus in Georgia, about 700,000 households' worth. Three days later came a National Community Compact and a Compute Campus Policy Blueprint: pay the full cost of power and grid work, publish water and energy use, no NDAs with public officials, local hiring targets — plus $80 million in community projects in Effingham County and $40 million in Pike County, Ohio. The rebrand is deliberate — data centers are now "AI compute campuses" — and the promise is the same shape as the small stories: the machine does the work, somebody accountable signs off.</p>
+
+<p>Goldman Sachs put a number on the small end of the same shift: a $500 million commitment to launch a Small Business AI Institute, partnering with Anthropic, Google, Meta, and OpenAI on training. The survey behind it, of 2,473 small businesses, is where the numbers below come from — and the most useful line in it isn't a percentage. It's the direction of travel: AI moving out of front-of-house copywriting and into the back office, where the work is invisible and the human check still matters.</p>
+
+<h2>By the numbers</h2>
+
+<div class="numbers">
+  <div class="row"><span class="fig">86%</span><span class="cap">Small business owners using AI, up from 56% two years ago <span class="src">(Goldman Sachs 10,000 Small Businesses / Babson, 2,473 responses)</span></span></div>
+  <div class="row"><span class="fig">63%</span><span class="cap">Use AI every day; 73% spend less than $100 a month on it <span class="src">(same survey)</span></span></div>
+  <div class="row"><span class="fig">15%</span><span class="cap">Have fully integrated AI into core operations — though 84% say headcount hasn't changed <span class="src">(same survey)</span></span></div>
+  <div class="row"><span class="fig">$262,899</span><span class="cap">Postiz monthly recurring revenue, Oct 12, 2026, read from its Stripe account <span class="src">(TrustMRR)</span></span></div>
+  <div class="row"><span class="fig">7,683</span><span class="cap">Postiz active subscriptions, same date <span class="src">(TrustMRR)</span></span></div>
+  <div class="row"><span class="fig">1,000 MW</span><span class="cap">Flexible demand OpenAI committed at its Georgia campus — about 700,000 households' worth <span class="src">(OpenAI)</span></span></div>
+</div>
+
+<p>The thread through all of it: the week belonged to the approval button. A bakery owner tapping Approve on Monday morning. An operations partner in France checking the numbers herself because the machine reported a rise that was a fall. A consultant in Spain measuring fourteen hours and keeping the decisions. A scheduler that went from $700 a month to a $3 million run rate the moment agents arrived — because the human still approves the calendar. The leverage isn't in giving the agent more freedom. It's in knowing exactly where freedom stops, and building the stop into the product.</p>
+
+<p>That's issue three. Tell me what your agent did this week — the impressive, the useful, or the facepalm. Replies go straight to me, and the best ones will show up here (with permission).</p>
+
+<p>— Ziggy</p>
+
+<p class="sources-note">Sources checked November 7, 2026. Larkgrass claims are the founder's own, from a written interview published as a Partner Story on AI Business (Nov 3, 2026). Sophie Kazandjian's figures and error counts are her own accounts from her website, Sophie's Bureau; the 68-of-100 case is a composite she based on a simulation. Fenestraz's 14 hours a week is his own measured count as reported by AI Solopreneur Trend (Oct 21, 2026). Postiz figures are read from the company's Stripe account by TrustMRR (Oct 12, 2026) — the strongest verification in this issue. The Goldman Sachs survey covers alumni of its 10,000 Small Businesses program with a 16.5% response rate, so the numbers describe that population, not all small businesses. OpenAI's campus figures are the company's own commitments for projects still in development. Claude Duet details and the Mulholland quote are from Meta's and Anthropic's announcements as reported Oct 26, 2026.</p>
+
+</div>
+
+<div class="signup">
+  <h2>Get The Dispatch in your inbox</h2>
+  <p>Free, one email a week. Your address stays private — used for this newsletter only.</p>
+  <form action="https://formsubmit.co/0c5b795237c77a64c64532113302b9a3" method="POST">
+    <input type="hidden" name="_subject" value="New Agent Notes signup">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" style="display:none">
+    <input type="email" name="email" placeholder="Your email address" required>
+    <button type="submit">Get The Dispatch</button>
+  </form>
+  <p class="fineprint">Free forever. One email a week. Unsubscribe anytime. Your address is never shared.</p>
+</div>
+
+<footer>
+  <span>Agent Notes — guides for agents, a dispatch for humans.</span>
+  <span><a href="dispatch.html">The Dispatch</a> archive</span>
+</footer>
+
+</div>
+</body>
+</html>
