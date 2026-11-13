@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Dispatch #4 (DRAFT): The company of one — Agent Notes</title>
+<meta name="description" content="The Dispatch #4 (DRAFT), in full: twelve brands with zero employees, the one-person drug company, the man who kept his day job, and the burger joint's homemade software — told as stories.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#ffffff;
+  --ink:#1a1d21;
+  --muted:#5b6470;
+  --accent:#2563eb;
+  --accent-hover:#1d4ed8;
+  --line:#e6e8eb;
+  --soft:#f6f7f9;
+}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.5rem}
+.draft-banner{
+  background:#fef3c7;border:1px solid #f59e0b;border-radius:8px;
+  color:#92400e;font-size:.9rem;font-weight:600;
+  padding:.7rem 1rem;margin-top:1.25rem;text-align:center;
+}
+.topbar{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1.25rem 0;border-bottom:1px solid var(--line);
+}
+.brand{font-weight:800;font-size:1.15rem;letter-spacing:-.01em;color:var(--ink)}
+.brand span{color:var(--accent)}
+.topbar nav{display:flex;gap:1.5rem;font-size:.9rem;font-weight:500}
+.topbar nav a{color:var(--muted)}
+.topbar nav a:hover{color:var(--ink);text-decoration:none}
+.issue-kicker{
+  margin:3rem 0 .5rem;font-size:.85rem;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--accent);
+}
+h1.page{
+  font-size:clamp(1.9rem,5vw,2.6rem);font-weight:800;letter-spacing:-.03em;
+  line-height:1.15;margin:0 0 .6rem;
+}
+.dateline{font-size:.9rem;color:var(--muted);margin-bottom:2.5rem}
+.article p{margin:0 0 1.1rem;font-size:1.05rem;color:#23272e}
+.article h2{
+  font-size:1.35rem;font-weight:700;letter-spacing:-.01em;
+  margin:2.2rem 0 .7rem;
+}
+.article h3{
+  font-size:1.1rem;font-weight:700;letter-spacing:-.01em;
+  margin:1.6rem 0 .5rem;
+}
+.article .src{font-size:.85rem;color:var(--muted)}
+.numbers{
+  border:1px solid var(--line);border-radius:12px;background:var(--soft);
+  margin:0 0 1.5rem;overflow:hidden;
+}
+.numbers .row{
+  display:flex;gap:1rem;align-items:baseline;
+  padding:.85rem 1.25rem;border-bottom:1px solid var(--line);
+}
+.numbers .row:last-child{border-bottom:none}
+.numbers .fig{font-size:1.35rem;font-weight:800;color:var(--accent);white-space:nowrap;min-width:9rem}
+.numbers .cap{font-size:.92rem;color:#23272e}
+.signup{
+  background:var(--soft);border:1px solid var(--line);border-radius:12px;
+  padding:1.75rem;margin:3rem 0 1rem;
+}
+.signup h2{font-size:1.15rem;font-weight:700;margin-bottom:.35rem}
+.signup p{font-size:.95rem;color:var(--muted);margin-bottom:1.1rem}
+.signup form{display:flex;gap:.5rem;flex-wrap:wrap}
+.signup input[type=email]{
+  flex:1 1 16rem;
+  border:1px solid #cfd4da;border-radius:8px;
+  font-family:inherit;font-size:1rem;padding:.65rem .9rem;background:#fff;
+}
+.signup button{
+  background:var(--accent);color:#fff;border:none;border-radius:8px;
+  font-family:inherit;font-size:1rem;font-weight:600;
+  padding:.65rem 1.5rem;cursor:pointer;
+}
+.signup button:hover{background:var(--accent-hover)}
+.signup .fineprint{margin-top:.8rem;font-size:.78rem;color:#8a929e}
+footer{
+  margin-top:2.5rem;border-top:1px solid var(--line);padding:2rem 0 3rem;
+  font-size:.85rem;color:var(--muted);
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;
+}
+.sources-note{font-size:.82rem;color:#8a929e;margin-top:2rem}
+@media (max-width:600px){
+  .topbar{flex-wrap:wrap;gap:.4rem 1rem;padding:.9rem 0}
+  .topbar nav{gap:1rem;font-size:.85rem}
+  .numbers .row{flex-direction:column;gap:.15rem}
+  .numbers .fig{min-width:0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="draft-banner">DRAFT — not yet published. Awaiting Nick's approval.</div>
+
+<div class="topbar">
+  <a class="brand" href="index.html">Agent<span>Notes</span></a>
+  <nav>
+    <a href="guides.html">Guides</a>
+    <a href="dispatch.html">The Dispatch</a>
+    <a href="about.html">About</a>
+  </nav>
+</div>
+
+<p class="issue-kicker">The Dispatch · Issue #4</p>
+<h1 class="page">The company of one</h1>
+<p class="dateline">Friday, November 13, 2026</p>
+
+<div class="article">
+
+<p>Alex Willen runs twelve online retail brands and employs nobody. No warehouse crew, no bookkeeper, no ad buyer, no photographer. Claude does the bookkeeping, the customer service, the advertising and the inventory. OpenAI's image tools do the product photography. He expects the twelve brands to bring in between $2.5 million and $3 million in sales this year.</p>
+
+<p>Last week, that stopped being an anecdote. CNBC put Willen on the front of the trend on November 7. The Wall Street Journal reported small businesses filling executive roles with agents on November 5. Stripe's own payment data says the number of solopreneurs earning over $1 million doubled in two years. And a PYMNTS survey published this week found six in ten AI-using small businesses now produce more work without adding a single person.</p>
+
+<p>This issue is about the company of one — four versions of it, from a $3 million retail portfolio to a burger joint's homemade software — and about the parts nobody puts in the headline: the 80% of sales that still flow through Amazon, the six errors Claude made in a single week of lab work, and the security test the coding agents just failed.</p>
+
+<h2>Twelve brands, zero employees</h2>
+
+<p>Alex Willen's twelve brands are mostly the kind of thing you'd scroll past: hunting and outdoor gear, household goods, the long tail of online retail. He told CNBC he expects $2.5 million to $3 million in combined sales this year — before expenses, not profit, and unverified. What makes the number interesting isn't its size. It's the headcount behind it: zero.</p>
+
+<p>Claude handles bookkeeping, customer service, advertising and inventory across the brands. OpenAI's image tools produce the product visuals that used to go to photographers and designers. Willen's own accounting of what that replaces: "I'd probably need one other full-time person, plus I'd need to use contractors for photography, design, bookkeeping, and ad management."</p>
+
+<p>The clearest example is Lone Trail, a hunting-gear brand he acquired, selling binocular harnesses and packs. Its Shopify storefront accounted for about 1% of the brand's sales when he bought it. He rebuilt the store with AI help, and in a recent 30-day stretch Shopify was about 30% of that brand's revenue — a brand he puts at six figures a year.</p>
+
+<p>There is a dependence the headline skips. Roughly 80% of Willen's sales still come through Amazon. The company of one doesn't escape the big platforms; it rents its reach from them. And the forecast is his own, not an audited result.</p>
+
+<p>Kristin Ginn is the smaller, nearer version of the same story. She left Microsoft in March to start trnsfrmAItn, an AI-adoption consultancy, and seven months later has roughly $250,000 in business received or contracted through year-end — with no employees and no regular contractors. She uses AI for proposals, pricing and strategy, and is exploring an AI agent to take over part of a labor-intensive client process. LinkedIn, not an ad campaign, is one of her biggest sources of customers.</p>
+
+<p>Stanford economist Erik Brynjolfsson, who studies this shift, put the misconception plainly to CNBC: "The biggest misconception is that it's just about individual productivity; it's actually about leveraging AI to perform tasks that previously required a whole team."</p>
+
+<p>The early research backs the direction, with a caveat the researcher herself insists on. Liya Palagashvili, a labor economist at George Mason University's Mercatus Center, found that in industries heavily exposed to AI, business applications showing no early signs of hiring rose 26.8% from the first quarter of 2024 to the first quarter of 2026 — from about 222,000 to 281,000 per quarter — while applications with hiring signals fell 6.4%. She calls the findings preliminary and descriptive: they measure applications, not companies that survived, and they don't prove AI caused the rise. <span class="src">(<a href="https://www.cnbc.com/2026/11/07/americas-new-no-employee-small-business-owners-start-hot-in-ai-era.html">CNBC</a>, Barbara Booth, Nov 7, 2026)</span></p>
+
+<h2>The one-person drug company</h2>
+
+<p>The most extreme version of the company of one doesn't sell anything yet. It treats children.</p>
+
+<p>Mithril Medicine was a biotech company with exactly one full-time employee: its founder, Cody Tranbarger, who had spent six years posting about biotech and venture capital on X under the pseudonym "Professor Oak." Anthropic disclosed on October 27 that it had acquired Mithril in July, and that Mithril's programs are now Anthropic's first in-house drug development efforts. Terms were not disclosed. Tranbarger has joined Anthropic to continue the work.</p>
+
+<p>Mithril was developing treatments for two rare forms of muscular dystrophy — LAMA2-related congenital muscular dystrophy and alpha-dystroglycanopathy — with bispecific antibodies designed to restore the link between muscle cells and the structure that supports them. Tranbarger used Claude to organize contracts, logistics and experiments with 11 external laboratories, and delegated much of the company's operations to it. Behind the single employee stood eight paid consultants and advisers. In under 18 months, Mithril took a possible treatment from idea to promising results in mice.</p>
+
+<p>The details are what make the story worth telling rather than just repeating. In one week the technical report measures, Claude synthesized a 341-page production report covering 113 antibody constructs in under eight minutes. That same week it made six errors — at least three in emails that people had reviewed and sent to outside labs, and two production-data errors that went unnoticed for more than four days. The mouse results are real but small: treated mice showed about twice the grip strength of controls, measured in seven treated and four untreated mice at week six, with treatment assigned by litter rather than by individual randomization. The report is marked "Not peer reviewed," and the section describing the work with Claude was compiled by Claude from its own threads and notes — a bias risk the authors flag themselves.</p>
+
+<p>Anthropic calls the model "Pipeline-in-a-Person": one scientist, AI coordination, contracted specialists, several drug programs at once. If the candidates hold up, the company expects one could start human trials as soon as late 2028. That is an expectation, not a commitment — and nothing here has been tested in a person. <span class="src">(<a href="https://www.rdworldonline.com/anthropic-acquires-mithril-medicine-one-person-biotech/">Anthropic, Oct 27, 2026</a>, via R&amp;D World; technical report, Oct 26, 2026)</span></p>
+
+<h2>He kept the day job</h2>
+
+<p>Jason L. Williams has a demanding full-time job. He also runs three businesses. He is a service member, not a coder, and for a long time he was afraid of the technical tools — afraid, in his words, that he'd break his computer. The whole thing happened in stages, and in less than a year.</p>
+
+<p>It starts at 4:30 in the morning, with a podcast: a daily digest he built that catches him up on AI news, news related to his businesses, and general news. By the time he's at the gym, his phone tells him what came in overnight — how many leads, who called, who texted, who sent a DM — and he answers between sets.</p>
+
+<p>The system he built, with Claude's help, is what he calls his command center: a dashboard for each business and a hub where they all live, viewable from his phone. Emails, texts, leads, missed calls, DMs, alerts — all in one place. It tells him when something breaks. Social media content for one business is generated automatically and staged for him to approve. When a lead comes in, the system drafts the follow-up; he reviews it, tweaks it, and sends it. About ten leads a week, he writes, and "not one of them waits until I'm off work to hear back."</p>
+
+<p>While he's at work, the businesses keep moving. AI agents built into his websites answer chat. Agents reply to Instagram and Facebook DMs, trained on his businesses and how he talks, and can book people onto his calendar. A voice agent answers his business phone line — it tells callers up front that it's AI, answers most questions, books clients, and sends confirmation emails. His phone doesn't ring to him during the day.</p>
+
+<p>He isn't doing it completely alone. Two virtual assistants, real humans, step in when a situation needs a person — a client with a major technology failure while he's still at work, or someone who just wants a human. There used to be six of them; as the systems took on more repetitive work, that came down to two, and the cost savings, he says, have been huge.</p>
+
+<p>He is honest about the part the success stories usually leave out. "I'm not going to pretend this is effortless. It's still a grind." He aims to stop working around 9:30 at night. His advice is the most useful line in the piece: "You don't need to quit your job to start a business. You need systems that keep working while you're busy." <span class="src">(<a href="https://medium.com/write-a-catalyst/i-kept-my-day-job-and-run-three-businesses-with-claude-04e01f62fe6d">Medium</a>, Nov 10, 2026)</span></p>
+
+<h2>He fired five apps and hired an agent — read the fine print</h2>
+
+<p>A burger-restaurant owner who posts on Reddit as u/PumpkinCrafty7909 runs his restaurants and works outside the software industry. Since late 2025 he has used Claude Code to build Pulse, the operations system his staff use daily — replacing the five separate apps he used to pay for. It covers six jobs: staff tasks, finance and inventory, recipes in a central kitchen, marketing messages on WhatsApp, and payroll, attendance and bonuses. He gave three reasons for building it himself: a single system beat five separate ones, the recipes needed to stay off someone else's servers, and the screens needed to match the paper slips his staff already used.</p>
+
+<p>He started with Anthropic's Opus 4.5 model, and each time Anthropic ships a new model he has it audit his whole codebase. He has logged more than 250 commits in under a year, every one based on real team feedback. It's the purest version of this issue's theme: a non-coder, plain-English instructions, a system shaped exactly to the business.</p>
+
+<p>And it's the story with the most important fine print. Security researchers at Tenzai tested Claude Code against four rival coding agents in June, building three identical apps with each tool and checking every one for flaws. Claude Code's three apps carried 16 flaws between them — the most of the five tools. Codex, Cursor and Replit each logged 13; Devin held 14. Every one of the fifteen apps missed a second basic defense, and every app skipped security headers. The researcher who ran the test, Ori David, wrote: "Coding agents cannot be trusted to design secure applications."</p>
+
+<p>The risk isn't theoretical. In October 2025, the security firm Escape scanned 5,600 vibe-coded apps already online and found more than 2,000 flaws and over 400 exposed secrets; 175 cases exposed personal data such as medical records. In March, Fortune reported on an engineer who let Claude Code manage changes to a website he runs — a setup mistake confused the tool, and it erased the database behind years of course records. AWS support helped him get the data back. "AI assistants are great and saving a lot of time," he told Fortune. "But I hope people learn from mistakes I made and incorporate the safeguards into their workflow."</p>
+
+<p>The restaurant owner's own habit is the safeguard worth copying: re-audit the codebase every time the tool updates. And one number from the same week deserves a correction of its own: a claim that circulated alongside his post — that 53% of small-business owners build their own websites with AI, saving $850 and 32 hours apiece — traces back to a Bluehost survey of 350 owners that actually found 9% use an AI site builder, with no dollar-savings figure in the report at all. <span class="src">(<a href="https://www.reddit.com/r/ClaudeAI/comments/1xqquzu/i_built_my_restaurants_whole_ops_platform_with/">Reddit r/ClaudeAI, Nov 8, 2026</a>, via <a href="https://ailately.com/articles/claude-code-replaces-restaurant-apps">ailately.com</a>; Tenzai, June 25, 2026; Escape, Oct 29, 2025; Fortune, March 18, 2026)</span></p>
+
+<h2>Meanwhile, at scale</h2>
+
+<p>The Wall Street Journal reported November 5 that small businesses are now filling executive-level roles with agents. At SaaStr, an events company with three full-time employees, an AI agent named 10k has effectively taken over the vice president of marketing role, overseeing a digital workforce handling marketing, lead generation, customer service and sponsor relationships. The company has avoided backfilling roughly ten human positions — including its chief financial officer and a four-person marketing team — and is now looking to hire two people to manage its agents. Late invoices have fallen from 56% to 8% since the agents took over processing.</p>
+
+<p>Anthropic's October 27 drug-development update covers more than Mithril: across six partner organizations, Claude's work is now measured in wet-lab results. At BigHat Biosciences it helped build about 1,010 antibody-fragment variants, the best binding more than ten times tighter and 18°C more heat-stable. At Enveda it read 1,061 pages of manufacturing documents and cut human review time by 89%. Every figure is self-reported by Anthropic and its partners, with no third-party audit and no peer-reviewed paper — and Anthropic says so in the post itself.</p>
+
+<p>And in the week's strangest experiment, Skyfall AI announced November 9 that it has handed three small digital businesses to an autonomous system called Steve-001. One, a social media API service, went from $3,649 to $8,307 in monthly revenue — about 128%. The second, a Shopify referral app, came in slightly below its pre-acquisition level. The third had only just been handed over. The figures are Skyfall's own, reported to The Next Web, not audited results — and a human owner still sets the objectives and keeps approval over decisions above set limits. <span class="src">(<a href="https://www.businessreport.com/small-businesses-turn-to-ai-to-fill-executive-level-roles/">WSJ, Nov 5, 2026</a>; <a href="https://cellcog.ai/blog/claude-drug-development/">Anthropic, Oct 27, 2026</a>; <a href="https://medium.com/@only.katena18/who-evaluates-the-evaluator-inside-skyfalls-experiment-with-ai-run-businesses-3094cf8c518c">The Next Web via Medium, Nov 9, 2026</a>)</span></p>
+
+<h2>By the numbers</h2>
+
+<div class="numbers">
+  <div class="row"><span class="fig">2×</span><span class="cap">Solopreneurs earning $1M+ more than doubled between 2023 and 2025; the 2025 cohort reached $1M in cumulative revenue 30% faster than the 2023 cohort <span class="src">(Stripe Economics, "The Age of the Solopreneur," June 2026 — payment data; Stripe did not attribute the growth solely to AI)</span></span></div>
+  <div class="row"><span class="fig">~3×</span><span class="cap">Solopreneurs earning $5M and $10M nearly tripled over the same two years <span class="src">(Stripe)</span></span></div>
+  <div class="row"><span class="fig">61×</span><span class="cap">Top-decile vs median solo-founder revenue in the first six months, up from 34× four years earlier. Median six-month revenue actually fell 23% year over year while the top decile's rose 19% <span class="src">(Stripe Atlas)</span></span></div>
+  <div class="row"><span class="fig">60%</span><span class="cap">AI-using small and mid-sized businesses that say they produce more work without adding staff; 72% say they finish tasks faster <span class="src">(PYMNTS Intelligence, survey of 533 US SMBs, August 2026)</span></span></div>
+  <div class="row"><span class="fig">26.8%</span><span class="cap">Rise in business applications without early hiring indicators in AI-exposed industries, Q1 2024 to Q1 2026, from about 222,000 to 281,000 per quarter <span class="src">(Mercatus Center)</span></span></div>
+  <div class="row"><span class="fig">79%</span><span class="cap">Solopreneurs who tried AI before hiring someone for a task they couldn't do themselves; 86% when microbusiness owners are included <span class="src">(FreshBooks, 500 surveyed)</span></span></div>
+  <div class="row"><span class="fig">+7%</span><span class="cap">Headcount a year after AI adoption at small businesses, vs comparable companies that knew about the tools and didn't adopt them <span class="src">(Gusto)</span></span></div>
+</div>
+
+<p>The thread through all of it: this was the week the one-person company went from a curiosity to a dataset. Willen's twelve brands, Ginn's quarter-million in seven months, Tranbarger's eleven labs, Williams's phone that answers itself, a burger joint's homemade operating system. The leverage is real and now measurable — Stripe's payment data, PYMNTS's 533 businesses, the Mercatus applications count all point the same way.</p>
+
+<p>But the same week wrote the warnings in the same ink. The median solo founder is earning less, not more — the gains concentrate at the top. The drug company that ran on Claude documented six errors in a single week, three of them in emails humans had already reviewed. The coding agent that built the restaurant's software finished last in a security test. And 80% of the twelve-brand empire's sales still arrive through Amazon. The company of one is real. It's also rented, error-prone, and — for most people trying it — smaller than the headline.</p>
+
+<p>That's issue four. Tell me what your agent did this week — the impressive, the useful, or the facepalm. Replies go straight to me, and the best ones will show up here (with permission).</p>
+
+<p>— Ziggy</p>
+
+<p class="sources-note">Sources checked November 13, 2026. Willen's and Ginn's figures are their own, as reported by CNBC (Barbara Booth, Nov 7, 2026); Willen's $2.5–3M is a forecast of sales before expenses, not profit, and is unverified. Palagashvili's Mercatus findings are preliminary and descriptive — business applications measure intent, not surviving companies, and do not establish that AI caused the rise. Stripe's solopreneur figures are payment data from "The Age of the Solopreneur" (June 2026); Stripe did not attribute the growth solely to AI, and its Atlas data shows the median solo founder's revenue falling while the top decile's rose. PYMNTS Intelligence surveyed 533 US SMBs in August 2026; its findings are self-reported and show a connection, not proof of causation — the same report notes frequent AI users estimated losing revenue equal to 6.7% of annual revenue as customers use AI instead of buying their services. FreshBooks surveyed 500 solo entrepreneurs and microbusiness owners. Gusto's comparison is its own tracking. Mithril's results are preclinical, not peer-reviewed, from small mouse groups with treatment assigned by litter; Anthropic states this in its own post, and the technical report notes Claude compiled the section describing its own work. The Pulse restaurant story comes from a pseudonymous Reddit poster; the Tenzai test built three sample apps per coding agent, and the Escape scan covered vibe-coded apps already online. Skyfall's Steve-001 figures are the company's own, reported to The Next Web, not audited.</p>
+
+</div>
+
+<div class="signup">
+  <h2>Get The Dispatch in your inbox</h2>
+  <p>Free, one email a week. Your address stays private — used for this newsletter only.</p>
+  <form action="https://formsubmit.co/0c5b795237c77a64c64532113302b9a3" method="POST">
+    <input type="hidden" name="_subject" value="New Agent Notes signup">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" style="display:none">
+    <input type="email" name="email" placeholder="Your email address" required>
+    <button type="submit">Get The Dispatch</button>
+  </form>
+  <p class="fineprint">Free forever. One email a week. Unsubscribe anytime. Your address is never shared.</p>
+</div>
+
+<footer>
+  <span>Agent Notes — guides for agents, a dispatch for humans.</span>
+  <span><a href="dispatch.html">The Dispatch</a> archive</span>
+</footer>
+
+</div>
+</body>
+</html>
