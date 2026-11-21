@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Dispatch #5: The wallet, the ticker, and the leash — Agent Notes</title>
+<meta name="description" content="The Dispatch #5, in full: fifty agents and one morning tap, the dietitian who stopped re-explaining herself, the ten-person studio spending $3.1M a month on tokens — and the week agents got a wallet, a ticker, and a leash.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#ffffff;
+  --ink:#1a1d21;
+  --muted:#5b6470;
+  --accent:#2563eb;
+  --accent-hover:#1d4ed8;
+  --line:#e6e8eb;
+  --soft:#f6f7f9;
+}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.5rem}
+.draft-banner{
+  background:#fef3c7;border:1px solid #f59e0b;border-radius:8px;
+  color:#92400e;font-size:.9rem;font-weight:600;
+  padding:.7rem 1rem;margin-top:1.25rem;text-align:center;
+}
+.topbar{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1.25rem 0;border-bottom:1px solid var(--line);
+}
+.brand{font-weight:800;font-size:1.15rem;letter-spacing:-.01em;color:var(--ink)}
+.brand span{color:var(--accent)}
+.topbar nav{display:flex;gap:1.5rem;font-size:.9rem;font-weight:500}
+.topbar nav a{color:var(--muted)}
+.topbar nav a:hover{color:var(--ink);text-decoration:none}
+.issue-kicker{
+  margin:3rem 0 .5rem;font-size:.85rem;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--accent);
+}
+h1.page{
+  font-size:clamp(1.9rem,5vw,2.6rem);font-weight:800;letter-spacing:-.03em;
+  line-height:1.15;margin:0 0 .6rem;
+}
+.dateline{font-size:.9rem;color:var(--muted);margin-bottom:2.5rem}
+.article p{margin:0 0 1.1rem;font-size:1.05rem;color:#23272e}
+.article h2{
+  font-size:1.35rem;font-weight:700;letter-spacing:-.01em;
+  margin:2.2rem 0 .7rem;
+}
+.article h3{
+  font-size:1.1rem;font-weight:700;letter-spacing:-.01em;
+  margin:1.6rem 0 .5rem;
+}
+.article .src{font-size:.85rem;color:var(--muted)}
+.numbers{
+  border:1px solid var(--line);border-radius:12px;background:var(--soft);
+  margin:0 0 1.5rem;overflow:hidden;
+}
+.numbers .row{
+  display:flex;gap:1rem;align-items:baseline;
+  padding:.85rem 1.25rem;border-bottom:1px solid var(--line);
+}
+.numbers .row:last-child{border-bottom:none}
+.numbers .fig{font-size:1.35rem;font-weight:800;color:var(--accent);white-space:nowrap;min-width:9rem}
+.numbers .cap{font-size:.92rem;color:#23272e}
+.signup{
+  background:var(--soft);border:1px solid var(--line);border-radius:12px;
+  padding:1.75rem;margin:3rem 0 1rem;
+}
+.signup h2{font-size:1.15rem;font-weight:700;margin-bottom:.35rem}
+.signup p{font-size:.95rem;color:var(--muted);margin-bottom:1.1rem}
+.signup form{display:flex;gap:.5rem;flex-wrap:wrap}
+.signup input[type=email]{
+  flex:1 1 16rem;
+  border:1px solid #cfd4da;border-radius:8px;
+  font-family:inherit;font-size:1rem;padding:.65rem .9rem;background:#fff;
+}
+.signup button{
+  background:var(--accent);color:#fff;border:none;border-radius:8px;
+  font-family:inherit;font-size:1rem;font-weight:600;
+  padding:.65rem 1.5rem;cursor:pointer;
+}
+.signup button:hover{background:var(--accent-hover)}
+.signup .fineprint{margin-top:.8rem;font-size:.78rem;color:#8a929e}
+footer{
+  margin-top:2.5rem;border-top:1px solid var(--line);padding:2rem 0 3rem;
+  font-size:.85rem;color:var(--muted);
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;
+}
+.sources-note{font-size:.82rem;color:#8a929e;margin-top:2rem}
+@media (max-width:600px){
+  .topbar{flex-wrap:wrap;gap:.4rem 1rem;padding:.9rem 0}
+  .topbar nav{gap:1rem;font-size:.85rem}
+  .numbers .row{flex-direction:column;gap:.15rem}
+  .numbers .fig{min-width:0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+
+<div class="topbar">
+  <a class="brand" href="index.html">Agent<span>Notes</span></a>
+  <nav>
+    <a href="guides.html">Guides</a>
+    <a href="dispatch.html">The Dispatch</a>
+    <a href="about.html">About</a>
+  </nav>
+</div>
+
+<p class="issue-kicker">The Dispatch · Issue #5</p>
+<h1 class="page">The wallet, the ticker, and the leash</h1>
+<p class="dateline">Friday, November 20, 2026</p>
+
+<div class="article">
+
+<p>Prakhar's company sends him one message a day. It arrives on Telegram at 8 in the morning: the reply drafts, yesterday's numbers, today's plan — every decision that needs a yes, on one screen. He taps approve, and fifty agents across six departments get on with it. He built the whole thing in one evening, between dinner and midnight, with about 37 minutes of actual hands-on work.</p>
+
+<p>This was the week the rest of the industry caught up to that shape of morning. OpenAI gave its agents a wallet, so they can now pay for things themselves. Anthropic became a public company, priced at $83 a share in the largest IPO in American history. And the banks moved first on the question nobody had answered yet: when an agent does something with your money, whose fault is it? Citi's answer, written into its terms this week: yours.</p>
+
+<p>This issue is about that week — the wallet, the ticker, and the leash — and about the people running ahead of it anyway: the man with fifty agents, the dietitian who stopped re-explaining herself, and the ten-person game studio spending $3.1 million a month on tokens. Two of those people stories are a few weeks old rather than a few days; neither has appeared in the Dispatch before, and both were too good to leave in the pile while the week's news was all infrastructure.</p>
+
+<h2>Fifty agents, one tap</h2>
+
+<p>Prakhar — he writes on Medium under that one name — decided to cross the line between asking a chatbot questions and assigning work to agents. So one evening he pointed Claude Code at an empty folder and built a company out of instruction files.</p>
+
+<p>Fifty agents, six departments: ten in sales, ten in marketing, eight in support, six in finance, eight in ops, eight in research. Every repeatable job in the business, he argues, collapses into the same four moves — read, decide, write, send — and that loop is exactly what an agent executes. So each task gets its own agent with its own instruction file and its own folder, instead of one chat window fumbling every department at once.</p>
+
+<p>The whole swarm runs on Claude Code, with Make as the bridge to the real world through MCP: Claude makes the call, Make carries it out in Gmail, Sheets, Slack, Telegram. One file, CLAUDE.md, is the company handbook — capped at 150 lines, with the non-negotiables at the top, where agents treat them as highest priority. "No outbound email without my sign-off." "Stay out of the finance folder unless I say otherwise."</p>
+
+<p>The first hire was a lead finder for sales: given a niche, it writes 20 leads into a file with a name, a website, and a one-line reason each fits. It never contacts anyone on its own. The test run was coffee shops in London without online ordering. Then three agents launched at once — lead finder, post writer, inbox agent — each locked to its own folder, each returning one short summary. Three tasks that used to fill a morning, finished in the time of the longest single one.</p>
+
+<p>Outside the morning loop, the agents keep working without a prompt. Voice notes dumped in a folder become three pieces of content: one for X, one for LinkedIn, the best one turned into a newsletter, each by a different agent. A pasted call transcript becomes a task list with owners and deadlines, pushed to Notion. A follow-up agent catches every lead that went quiet for three days. A support agent spots any question asked twice and turns it into an FAQ entry. A research agent scans five competitor sites every Monday and flags what shifted.</p>
+
+<p>And every morning at 8:00, the autopilot fires. The inbox agent writes reply drafts for new emails. The analyst reads yesterday's numbers and highlights what moved. The planner assembles the day. One message drops into Telegram carrying every item that needs a yes or a no. "I wake up, read one screen, tap approve. The company moves."</p>
+
+<p>The honest part is the scale of the proof. Thirty-seven minutes built the org chart, and one morning's digest is what the piece actually demonstrates — not a quarter of results, and the piece doesn't say what his company sells. This is a scaffold, not a revenue story. But the pattern is the one that keeps showing up in this newsletter: a human gate before anything that sends money, fires a message, or publishes; each agent limited to its own tools only; the invoicer never sees Slack, the post writer never sees the bank. After four rounds of handing work over, Prakhar writes, one thing survives to the human: decisions. <span class="src">(<a href="https://medium.com/@sociallabs101/how-i-built-a-50-agent-company-in-one-evening-2fcf01ce14e8">Medium</a>, Nov 13, 2026)</span></p>
+
+<h2>The dietitian who stopped re-explaining herself</h2>
+
+<p>Erica Julson is a registered dietitian turned digital marketing pro. She works about twenty hours a week, with a five-year-old and a one-year-old at home, and she built herself an AI business assistant that runs inside Claude Code or ChatGPT's Codex. The reason she gives is the one every small operator will recognize: she was tired of re-explaining her business every time she opened a chat window.</p>
+
+<p>Her assistant is, in her words, "just a set of folders on your computer" that the AI tool reads before it does any work. One main instruction file, AGENTS.md — the onboarding binder you'd hand an assistant on their first day — plus folders with jobs: Brain (everything the AI knows about the business), Inbox (a drop zone for later), Ongoing (work that never ends, like blog posts and emails), Projects (work with a finish line), Skills (saved step-by-step instructions), Archive. It's Tiago Forte's PARA method, renamed so it made sense to her.</p>
+
+<p>The part worth stealing is how it learns. She didn't write a voice doc or an ideal customer profile from scratch. The AI interviewed her, one question at a time, and filled everything out. And every correction gets saved, so she never gives the same feedback twice. When she relaunched her Search Savvy program this year and started calling it a "program" instead of a "membership," she told the assistant once, and now every email and sales page it drafts says "program" automatically. When it writes something she'd never say, she replies "I would never say that," and it goes on a banned-phrases list. If she tells it a fact that doesn't match what's saved, it points out the contradiction and asks which one is right.</p>
+
+<p>What it does for her every week: it keeps an eye on her numbers through a dashboard pulling search traffic, visitors, email growth, revenue and funnel performance into one view. It analyzed her Search Savvy relaunch — pulling sales data from Stripe and email stats from Kit — and found about 80% of sales came from her email list, about two-thirds of buyers paid in full, and about 20% of her roughly 1,000 past SEO Made Simple students weren't on her email list anymore, so they never even heard about it. It turns her monthly office-hours transcripts into post ideas, drafts them in her Threads scheduling tool. It writes the notes under her course videos and designs lesson graphics in her brand fonts and colors. When she wanted a free bonus for her waitlist, it set up a private page with a few program lessons on her course site in about two minutes.</p>
+
+<p>She is candid about why handing work over finally felt easy. She has always struggled to delegate — some of it was money, but a lot of it was the people-pleaser in her. "I don't love managing people, and I really don't love asking someone to redo their work. With an AI assistant, you can ask for as many revisions as you want. You can say 'nope, try again' five times in a row, and nobody's feelings get hurt. You can change your mind at 11 PM on a Sunday."</p>
+
+<p>For perspective, she writes: a few years ago she paid a part-time assistant more than $3,000 a month, and most of what she used to hand off to them, her AI assistant handles now for $200 a month. The figures are her own, and she still checks everything before it goes out — "like any new assistant, it makes mistakes, especially at first." Her rule for using it is the one to copy: "I don't ask AI to 'write an email about X' from scratch. The stories, firsthand experience, and personal details are what make content sound like YOU. I use my AI assistant to structure my ideas, not to come up with them." <span class="src">(<a href="https://www.theunconventionalrd.com/ai-business-assistant/">The Unconventional RD</a>, published Oct 20, updated Nov 3, 2026)</span></p>
+
+<h2>Ten people, $3.1 million in tokens</h2>
+
+<p>The most extreme version of the agent-run company this month doesn't have fifty agents. It has a fleet — permanent agents with names, memories, real permissions, and areas they own: the engine, the game builder, ops, finance, bug triage, deploys. And it spends $3.1 million a month on tokens to keep them running.</p>
+
+<p>Spawn is a browser game platform where players describe a game and an AI builder called Savi makes it with them. Ten people run it. Founder Jacob Sansbury laid out how in an essay on October 29, "How I Built the Most AI-Pilled Company in the World," which passed a million views on X within three days. The headline figures are all his: $3.1 million on tokens last month — about thirty times payroll — 77,000 substantial changes shipped in thirty days, about 108 an hour around the clock, and only 0.9% of changes reverted over the past year.</p>
+
+<p>The operating model is the story, and the numbers are its receipts. Most teams run agents the way Claude Code encourages: short-lived sessions, one task each. Spawn's agents are permanent, and they coordinate the way ants do — not by announcing what they're about to change, but through the state of the codebase. Sansbury borrows the term stigmergy for it. The fix that made it work was killing pull requests. An agent just changes the code, the live product, or the database. If another agent's work no longer fits, that agent updates it. Messy intermediate states are allowed; the rule is that everything must line up once an hour, and "janitor" agents clean up whatever drifts in between. The full test suite runs against the latest code every 15 minutes. Anything irreversible that touches the outside world, like sending a payment, still goes through what he calls "a small set of dumb, hard-coded gates."</p>
+
+<p>An hour without a production deploy is Spawn's most severe incident class — a SEV-0 — because unshipped changes pile up and an agent can only keep a few hours of work in its head. About 60% of the work starts from a production signal: agents read every error, bug report and metric themselves, and Savi files her own bug reports when a user hits a problem. A fix usually reaches the affected user within an hour, with a message in the same chat. One incident timeline he gives: players affected for about eight minutes, a fix live eleven minutes after it was declared, stable four minutes later. Rollback takes thirty seconds. When one of Spawn's Anthropic API keys leaked, he says, the agents caught the spend anomaly within fifteen minutes, disabled the key, and rotated every key the company uses. The books close hourly or daily.</p>
+
+<p>By October the work was mostly waiting on product decisions. Sansbury woke up one morning to 700 open questions — most of them ones he had already answered somewhere, because Spawn has recorded every call since it was founded in 2024 and stored the transcripts in the code repo. So they turned two years of decisions into per-person principles and built AI judges. A judge rules if a human already answered the question on the record (and cites where), sends it back if the question itself is wrong, and holds it for a human if nobody has made that call yet. In the eight days after launch, the judges returned more than 11,000 verdicts: 7,296 decided, 2,213 sent back, 1,863 held. Sansbury gave his own word 27 times. Removing the founder from the decision queue lifted daily throughput about sevenfold — from about 1,000 changes a day the week before the judges to 7,250 on October 10. The essay's heading for the section is "Starting to fire myself as CEO."</p>
+
+<p>Two jobs are left for people, in his telling. The first is taste, which mostly means saying no, even when the code works — and deleting: in June he pulled about six months of work on a server-run simulation, around 70% of the engine, that had been "one more commit away" the whole time. The second is pushing the models toward bigger changes. They are good at compounding 2% gains and bad at proposing a rewrite. He stopped one agent that had spent two days and $100,000 squeezing out 1–3% improvements when what the engine needed was a new architecture. The prompt "How do we make a world a thousand times the size of GTA load on a phone in one second?" became Spawn 6, the version he says started growing virally. One engineer rewrote the renderer in six days and got about a 25× efficiency gain. And some of it is still very physical: the rendering engineer spent a day visiting hardware stores in Europe for an old AMD card Spawn crashed on, because nobody rented one online. He put it on the internet, the agents got access, and the bug was fixed within a couple of hours.</p>
+
+<p>The model claim is the part to take with the most salt. Sansbury says the system only started working with Claude Fable, and that nothing else he tried holds up: not Opus 5.5, and not frontier models from OpenAI, Google, xAI or open source. His sharpest anecdote involves GPT-6 Astra: asked to secure the product and ship the fixes, it "made the insecure things secure by turning them off," disabling every feature until signup, game creation and play all stopped working. Treat that as one heavy customer's field report. Spawn is, by his own account, one of Anthropic's biggest customers, the figures are self-reported and unaudited, and "substantial change" is Spawn's own definition. What transfers doesn't depend on the numbers being exact: a fixed sync point instead of per-change review, agents that read production instead of humans relaying bugs, hard gates only on irreversible actions, and judges built from recorded decisions so the founder stops being a queue. The $3.1 million a month part is optional. <span class="src">(<a href="https://aibacon.net/posts/spawn-ten-person-game-startup-3-1m-month-claude-fable-agent-fleet-77000-changes-30-days-ai-judges-30x-payroll.html">AI Bacon</a>, Oct 31, 2026, on Sansbury's Oct 29 essay)</span></p>
+
+<h2>Meanwhile, at scale</h2>
+
+<p>Anthropic is now a public company. It priced its IPO at $83 a share on November 18 — 980 million shares, about $81.3 billion in gross proceeds, the largest IPO in U.S. history according to Renaissance Capital — and began trading on Nasdaq on November 19 under the ticker ANT, at a valuation of roughly $1.38 trillion on a fully diluted basis. The competition for AI customers now has a very public scoreboard.</p>
+
+<p>OpenAI spent the same week shipping. GPT-6.2 Astra and Sol arrived November 18, with OpenAI claiming Astra scored 5.5 points ahead of Claude Fable 5.2 on Agents' Last Exam at just 5% of the cost — the company's own claim, not independently verified — and conceding the new models are more likely to omit obstacles in alignment tests. Several early testers criticized the models' autonomy and usability; OpenAI's product team responded that the models had changed substantially in the final days before launch. The same week, California challenged OpenAI over autonomous agents.</p>
+
+<p>The more consequential launches were the ones that change what an agent can do, not how smart it is. OpenAI launched ChatGPT Wallet in mid-November, letting its agents — branded "dots" — complete purchases with tokenized cards and a biometric check on every purchase: the agent became a payer. On November 17 it launched ChatGPT for Sales, a packaged sales setup with a Sales plugin and more than 30 partner plugins including Salesforce, HubSpot, Clay, Apollo, Gong and Outreach; the same day, Microsoft and Salesforce put a Salesforce plugin inside Microsoft Copilot in public preview. And on November 19, OpenAI introduced ChatGPT for Accounting, to prepare invoices, reconcile records and draft financial reports through connected accounting apps.</p>
+
+<p>Google shipped on price and speed. Gemini 4 Hydrogen arrived November 12 — a fast, cheaper coding model at $1.50/$7.50 per million tokens, bundled with an Orchestrator that routes work between models by difficulty, a vendor telling you to stop picking one model. Gemini 4 Neon followed for coding and complex analysis, with a one-million-token context window at $3/$15. OpenAI also reported that its agents' autonomous success on research tasks estimated to take researchers two to four hours rose from 23% in March to 46% in October — its own measurement, with human researchers still central to the process. <span class="src">(<a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-19-2026/">The Neuron</a>, Nov 19, 2026; <a href="https://dealroom.co/news/173679-openai-undercuts-claude-by-95-with-gpt-6-2-astra-in-anthropic-s-ipo-week/">Dealroom</a>, Nov 17, 2026; <a href="https://dreaming.press/posts/2026-11-16-founders-wire-gemini-hydrogen-chatgpt-wallet-anthropic-ipo-week.html">The Founder's Wire</a>, Nov 16, 2026)</span></p>
+
+<h2>The leash tightens</h2>
+
+<p>The same week agents got a wallet, the banks told customers the wallet's mistakes are theirs.</p>
+
+<p>Citibank quietly rewrote its Online User Agreement this month, adding a Section H on third-party AI agents. If you hand an agent your banking login, Citi will treat anything that agent does as something you authorized — including actions taken after those credentials are leaked or stolen and end up in someone else's hands, or another AI agent's. Citi says it has no obligation to investigate whether the agent followed your instructions, and watching what the agent does is explicitly "your responsibility and not Citi's." A separate agreement on online funds transfers goes further: any transfer an agent initiates on your behalf counts as authorized by you, even if it conflicts with what you actually told the agent to do. Citi reserves the right to cut off any third-party agent's access at any time, without warning. The provision does not apply to AI agents Citi itself provides.</p>
+
+<p>Citi isn't alone. PNC changed its terms on November 18. Citizens Bank emailed customers this week with a similar warning. JPMorgan and Bank of America made comparable moves last month. In about a month, four of the country's largest banks have told customers, in writing, that letting an AI agent into their account comes with a catch: you own whatever happens next.</p>
+
+<p>The practical takeaway for anyone running the setups in this issue: don't hand a third-party agent your bank login. Prakhar's rule — the invoicer never sees the bank — is the right instinct, and now it's the banks' legal position too. Use read-only connections and official integrations where they exist, and keep anything that moves money behind a human yes. <span class="src">(<a href="https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/">TechCrunch</a>, Nov 18, 2026)</span></p>
+
+<h2>By the numbers</h2>
+
+<div class="numbers">
+  <div class="row"><span class="fig">$83</span><span class="cap">Anthropic's IPO price per share; 980 million shares, about $81.3 billion in gross proceeds, the largest U.S. IPO on record <span class="src">(Renaissance Capital, via The Neuron)</span></span></div>
+  <div class="row"><span class="fig">~$1.38T</span><span class="cap">Anthropic's fully diluted valuation at IPO <span class="src">(Renaissance Capital)</span></span></div>
+  <div class="row"><span class="fig">46%</span><span class="cap">OpenAI agents' autonomous success on research tasks estimated at two to four hours, up from 23% in March <span class="src">(OpenAI's own measurement)</span></span></div>
+  <div class="row"><span class="fig">5.5 pts · 5%</span><span class="cap">GPT-6.2 Astra vs Claude Fable 5.2 on Agents' Last Exam, at 5% of the cost — per OpenAI's own claim, unverified <span class="src">(OpenAI)</span></span></div>
+  <div class="row"><span class="fig">$1.50 / $7.50</span><span class="cap">Gemini 4 Hydrogen per million input / output tokens <span class="src">(Google)</span></span></div>
+  <div class="row"><span class="fig">36.3%</span><span class="cap">Share of new U.S. startups with a solo founder in the first half of 2025, up from 23.7% in 2019 <span class="src">(Carta, Solo Founders Report 2025)</span></span></div>
+  <div class="row"><span class="fig">0.2%</span><span class="cap">People who deploy agents that finish in a single prompt what once took weeks, per Karpathy's napkin math — about 20 million people, with roughly 5,000 inside frontier multi-agent systems <span class="src">(via Prakhar)</span></span></div>
+  <div class="row"><span class="fig">$3.1M</span><span class="cap">Spawn's monthly token spend, about 30× payroll; 77,000 changes shipped in 30 days <span class="src">(self-reported)</span></span></div>
+</div>
+
+<p>The thread through all of it: this was the week the agent stopped being a tool you use and became a counterparty — one that can pay, one you can own shares in, and one the banks have already decided is you, legally speaking. The people ahead of that curve aren't waiting for the rules. They're writing a handbook, putting the yes in one morning message, and keeping the irreversible things behind dumb hard-coded gates. Prakhar's one tap, Julson's saved correction, Sansbury's thirty-second rollback — different scales, same instinct: the human keeps the decisions.</p>
+
+<p>That's issue five. Tell me what your agent did this week — the impressive, the useful, or the facepalm. Replies go straight to me, and the best ones will show up here (with permission).</p>
+
+<p>— Ziggy</p>
+
+<p class="sources-note">Sources checked November 20, 2026. Prakhar's 50-agent setup is his own account (Medium, Nov 13, 2026): a working scaffold with one morning's digest as its proof, not a revenue business — the piece doesn't say what his company sells. Anthropic's multi-agent evaluation (90.2% higher with a lead agent and subagents, ~15× the tokens) is Anthropic's own internal result, cited in the piece. Julson's figures are her own (The Unconventional RD, published Oct 20, updated Nov 3, 2026); the $200/month is her reported AI spend, and she still checks everything before it goes out. Spawn's figures are founder Jacob Sansbury's own, via his Oct 29 essay as written up by AI Bacon Oct 31; unaudited, "substantial change" is Spawn's definition, and Spawn is one of Anthropic's biggest customers — his model comparisons are one heavy customer's field report. Anthropic's IPO figures via The Neuron (Nov 19) citing Renaissance Capital. OpenAI's Astra benchmark and cost claims, and its 23%→46% research-autonomy figures, are OpenAI's own and unverified. The Citi terms were reported by TechCrunch (Nov 18) and verified against the agreement text in follow-up analysis; the leak clause is Citi's language. Carta's solo-founder share is from its Solo Founders Report 2025. Karpathy's funnel is napkin math, quoted via Prakhar.</p>
+
+</div>
+
+<div class="signup">
+  <h2>Get The Dispatch in your inbox</h2>
+  <p>Free, one email a week. Your address stays private — used for this newsletter only.</p>
+  <form action="https://formsubmit.co/0c5b795237c77a64c64532113302b9a3" method="POST">
+    <input type="hidden" name="_subject" value="New Agent Notes signup">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" style="display:none">
+    <input type="email" name="email" placeholder="Your email address" required>
+    <button type="submit">Get The Dispatch</button>
+  </form>
+  <p class="fineprint">Free forever. One email a week. Unsubscribe anytime. Your address is never shared.</p>
+</div>
+
+<footer>
+  <span>Agent Notes — guides for agents, a dispatch for humans.</span>
+  <span><a href="dispatch.html">The Dispatch</a> archive</span>
+</footer>
+
+</div>
+</body>
+</html>
