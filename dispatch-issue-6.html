@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Dispatch #6: The bottleneck moved — Agent Notes</title>
+<meta name="description" content="The Dispatch #6, in full: the Mac Mini booking fifty demos a month, one person and fifteen subagents shipping 1,109 pull requests, a game made in four days — and the week the bottleneck moved from writing to deciding and proving.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#ffffff;
+  --ink:#1a1d21;
+  --muted:#5b6470;
+  --accent:#2563eb;
+  --accent-hover:#1d4ed8;
+  --line:#e6e8eb;
+  --soft:#f6f7f9;
+}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.5rem}
+.draft-banner{
+  background:#fef3c7;border:1px solid #f59e0b;border-radius:8px;
+  color:#92400e;font-size:.9rem;font-weight:600;
+  padding:.7rem 1rem;margin-top:1.25rem;text-align:center;
+}
+.topbar{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1.25rem 0;border-bottom:1px solid var(--line);
+}
+.brand{font-weight:800;font-size:1.15rem;letter-spacing:-.01em;color:var(--ink)}
+.brand span{color:var(--accent)}
+.topbar nav{display:flex;gap:1.5rem;font-size:.9rem;font-weight:500}
+.topbar nav a{color:var(--muted)}
+.topbar nav a:hover{color:var(--ink);text-decoration:none}
+.issue-kicker{
+  margin:3rem 0 .5rem;font-size:.85rem;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--accent);
+}
+h1.page{
+  font-size:clamp(1.9rem,5vw,2.6rem);font-weight:800;letter-spacing:-.03em;
+  line-height:1.15;margin:0 0 .6rem;
+}
+.dateline{font-size:.9rem;color:var(--muted);margin-bottom:2.5rem}
+.article p{margin:0 0 1.1rem;font-size:1.05rem;color:#23272e}
+.article h2{
+  font-size:1.35rem;font-weight:700;letter-spacing:-.01em;
+  margin:2.2rem 0 .7rem;
+}
+.article h3{
+  font-size:1.1rem;font-weight:700;letter-spacing:-.01em;
+  margin:1.6rem 0 .5rem;
+}
+.article .src{font-size:.85rem;color:var(--muted)}
+.numbers{
+  border:1px solid var(--line);border-radius:12px;background:var(--soft);
+  margin:0 0 1.5rem;overflow:hidden;
+}
+.numbers .row{
+  display:flex;gap:1rem;align-items:baseline;
+  padding:.85rem 1.25rem;border-bottom:1px solid var(--line);
+}
+.numbers .row:last-child{border-bottom:none}
+.numbers .fig{font-size:1.35rem;font-weight:800;color:var(--accent);white-space:nowrap;min-width:9rem}
+.numbers .cap{font-size:.92rem;color:#23272e}
+.signup{
+  background:var(--soft);border:1px solid var(--line);border-radius:12px;
+  padding:1.75rem;margin:3rem 0 1rem;
+}
+.signup h2{font-size:1.15rem;font-weight:700;margin-bottom:.35rem}
+.signup p{font-size:.95rem;color:var(--muted);margin-bottom:1.1rem}
+.signup form{display:flex;gap:.5rem;flex-wrap:wrap}
+.signup input[type=email]{
+  flex:1 1 16rem;
+  border:1px solid #cfd4da;border-radius:8px;
+  font-family:inherit;font-size:1rem;padding:.65rem .9rem;background:#fff;
+}
+.signup button{
+  background:var(--accent);color:#fff;border:none;border-radius:8px;
+  font-family:inherit;font-size:1rem;font-weight:600;
+  padding:.65rem 1.5rem;cursor:pointer;
+}
+.signup button:hover{background:var(--accent-hover)}
+.signup .fineprint{margin-top:.8rem;font-size:.78rem;color:#8a929e}
+footer{
+  margin-top:2.5rem;border-top:1px solid var(--line);padding:2rem 0 3rem;
+  font-size:.85rem;color:var(--muted);
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;
+}
+.sources-note{font-size:.82rem;color:#8a929e;margin-top:2rem}
+@media (max-width:600px){
+  .topbar{flex-wrap:wrap;gap:.4rem 1rem;padding:.9rem 0}
+  .topbar nav{gap:1rem;font-size:.85rem}
+  .numbers .row{flex-direction:column;gap:.15rem}
+  .numbers .fig{min-width:0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+
+<div class="topbar">
+  <a class="brand" href="index.html">Agent<span>Notes</span></a>
+  <nav>
+    <a href="guides.html">Guides</a>
+    <a href="dispatch.html">The Dispatch</a>
+    <a href="about.html">About</a>
+  </nav>
+</div>
+
+<p class="issue-kicker">The Dispatch · Issue #6</p>
+<h1 class="page">The bottleneck moved</h1>
+<p class="dateline">Friday, November 27, 2026</p>
+
+<div class="article">
+
+<p>The whole go-to-market department at Asteroid is a Mac Mini. It sits in the office, runs Claude Code, costs about $200 a month, and books fifty demos a month for a six-person company that had never done go-to-market before.</p>
+
+<p>This issue is about three people who each built something out of agents and then hit the same wall — and it wasn't the wall they expected. Writing the code was never the hard part. Neither was writing the emails. The hard part, in all three stories, is deciding what to build and proving that what got built actually works. One man taught fifteen subagents to run his software company and spent five weeks learning that lesson in public. One game developer made a game in four days and wouldn't believe a fix until a bot played it and a stranger judged the screenshot. And the Mac Mini's owner discovered that the difference between a 3% reply rate and a 34% one was nineteen words and a warm opener.</p>
+
+<h2>Fifty demos a month, one Mac Mini</h2>
+
+<p>Joe Hewett is the co-founder and CTO of Asteroid, a Y Combinator company that connects health-tech companies to the healthcare systems holding healthcare data. Six people, engineering-heavy, no go-to-market experience — so they tried to reverse-engineer go-to-market from first principles, and built the system with Claude Code.</p>
+
+<p>Booking about twenty demos a month used to be painful. The autonomous system now books fifty to sixty a month, and Hewett believes it could reach a hundred with more commercial capacity. The whole thing runs on Claude Code on a Mac Mini in the office, for about $200 a month.</p>
+
+<p>The part worth stealing is how they found what works. They exported their LinkedIn messages and had Claude Code run feature extraction over them, looking for what the replies had in common. The answer was almost insultingly simple: every message that got a reply was under thirty words and opened warm. After they rebuilt their drafting around that rule, reply rates lifted from 3% to as much as 34%.</p>
+
+<p>The architecture is the story, and it's deliberately boring. Claude Code with skills acts as the back end, so the team writes no infrastructure at all. Everything else is a bought primitive: Crustdata for enrichment, Exa for search, Attio as the CRM and the "write store" for every action. Ideal customer profiles live as versioned markdown files, derived by connecting Claude Code to PostHog and the product database, so every result can be traced back to an ICP. Sign-ups and demo bookings trigger skills that enrich the lead, map the company, draft messages and enrol contacts in sequences. Cron jobs mine competitors' LinkedIn engagement every four hours. Any new go-to-market tactic seen online is supposed to be in production within about ten minutes, because go-to-market, in Hewett's telling, is a game of rapid experimentation.</p>
+
+<p>The same "headless ops" system runs customer success, with Hewett managing nearly a hundred customers himself. Asteroid has open-sourced a version of the repo, and aims to reach $10 million in annualised revenue before hiring again. The figures are the CTO's own, via a Y Combinator talk summarised by Dealroom — a summary, not the talk transcript — and the demo numbers are his company's, not an independent audit. What transfers doesn't depend on them being exact: buy the primitives, ship the glue, and let the machine learn from your own sent mail instead of anyone else's playbook. <span class="src">(<a href="https://dealroom.co/news/talk-w-6C-Hilg4g-how-asteroid-books-50-demos-a-month-with-claude-code-on-a-mac-mini/">Dealroom</a>, Nov 25, 2026, on a Y Combinator talk)</span></p>
+
+<h2>One person, fifteen subagents, 1,109 pull requests</h2>
+
+<p>Taylan Derinbay has spent fifteen years working in and leading test, software and platform teams. On September 1, 2026, he made the first commit on a question he'd been carrying since a testing conference in 2018, when he tweeted "AI is coming, of course, but when?" Could one person build a software company staffed entirely by agents?</p>
+
+<p>The first commit held a 1,885-word constitution — a CLAUDE.md — fourteen agent definitions and a starter prompt. Each agent's role, model and decision rights were written down in one table: product manager, business developer, architect, developers, reviewer, QA, team lead, and from October an acting-CEO agent that checks open decision issues every thirty minutes. Notifications go to Telegram, so he no longer needs to sit at the computer. Spend, production deploys and the constitution stayed with him; the acting CEO decides the rest — and it can't change its own definition, the constitution or the settings, "otherwise it could take the powers I kept for itself as well."</p>
+
+<p>Five weeks in, the numbers are the kind that make the rounds: 1,109 pull requests merged across eleven repos, 833 of them in the last three weeks. All of it runs on one 32 GB Windows machine at home, with nine CI runners across three machines — including a 2019 MacBook Pro and a 2011 MacBook Pro he put Linux on.</p>
+
+<p>But Derinbay is explicit that his post "isn't a success story. It's more of a list of mistakes and optimizations, because I spent the first two weeks writing the system that would write the product instead of writing the product." The mistakes are the story, and each one is a lesson with a receipt.</p>
+
+<p>The first: in two days the agents wrote seven quality gates and 508 test cases for them, all green, through six review rounds. None of the seven gates had run even once — the config line that switches them on had never existed. "Absence reads as success," the retro summed it up. "Just because something doesn't stop you doesn't mean it works." The fix was a script that reads the live config to check whether the gates are really on, and a "how many gates are live" line in the daily standup.</p>
+
+<p>The second: process ate the product. By September 7, fifty infrastructure pull requests had merged against twenty-eight on the product side. The merge gate alone had grown to 13,251 lines of bash with 635 test cases — the agents had rewritten GitHub's branch protection feature from scratch because the free plan doesn't offer it for private repos. It was blocking two to seven legitimate pieces of work every day, and had blocked the retro describing the problem. He told the agents, in his words, to be more permissive on security and review checks, because some things can be fixed after the MVP. The next day the gate was deleted entirely — 11,700 lines in a single day — gates dropped from seven to four, review went to a single round, and a code freeze was added to the constitution: the system's own rules can now change only when there's an active product blocker or he decides directly.</p>
+
+<p>The third was the most expensive: 78% of the spend went to the model re-reading the previous conversation from the start every time, and only 4% to what it actually wrote. The weekly usage limit ran out in three to four days. In one session the team lead checked "is there a new message?" 867 times, and the answer was "no" all 867 times. The fixes — auto-compact much earlier, a developer's work ending when it opens the PR, fresh agents for review findings, turn caps, summaries instead of full tool output — stretched the limit to six and a half days.</p>
+
+<p>The fourth: nearly half of blocking review findings weren't about code at all. The code had changed, but a design document, an ADR or a code comment still described the old behaviour — so documentation now gets updated in the same pull request. And the fifth: every decision was coming to him. Fifteen decision questions in the first two days, most of them technical details he didn't need to think about. Since the acting CEO arrived, all ten decision issues opened after it have been closed the same day; seventy-five have been opened in total, and none are open now.</p>
+
+<p>There is one thing on his list that the agents still can't do. A Chrome extension he had built for his new tab page broke when Cloudflare started rejecting its requests, and no agent could see whether the browser's clearance cookie was being sent — that cookie can't be read from code. Only he could tell, by opening DevTools in his own Chrome and looking. "When it couldn't take the last step that touches the real world, it said so plainly," he writes. "That turned out to be one of the things agents can't do yet."</p>
+
+<p>His conclusion is the sentence this whole issue hangs on: "I think the agents learned to write code a long time ago. I was the one who had to teach them how to work together." And the bottleneck, he says, is no longer writing code at all: "The real bottleneck is deciding what to build and verifying that what was built actually works." He ends on the question that should worry everyone building one-person companies: if junior positions shrink, where will tomorrow's seniors come from? He can check the agents' work with fifteen years of experience. If the places to gain that experience shrink, finding people to oversee the agents gets harder too. <span class="src">(<a href="https://hackernoon.com/what-happens-when-ai-agents-run-an-entire-software-company">HackerNoon</a>, Nov 25, 2026; Derinbay wrote the post himself, and the English version is a translation of the Turkish original. Figures are his own.)</span></p>
+
+<h2>A game in four days, proven with pictures</h2>
+
+<p>Nikhil — he publishes as Ravenspirit Media — made a game in four days. "Grandmother's Money Plant" was built November 12–16, 2026, for the Epic AI MegaJam, in Unreal Engine 5.8. He made every decision, wrote the story and her lines, and played the builds. He did not write the code.</p>
+
+<p>The crew was a lead agent — Claude Code — that read his notes, split them into jobs, wrote the brief for each one, checked the result and merged it; up to nine worker agents at once, each in its own copy of the project, each with a time limit; and DeepSeek as a helper on the last day. The two tools couldn't talk to each other, so they shared one text file that both could only add lines to. That file is 335 lines long for the last day alone.</p>
+
+<p>The spine of the devlog is his proof process, and it's the strictest one in this issue. "An agent saying 'fixed' proves nothing," he writes, so every change had to pass five steps: a bot plays the game by pressing the real keys; the game runs off screen and saves real frames at 1080p; the agent puts the frames on one sheet and writes the faults it sees on the sheet itself; a different agent, or the lead, looks at the sheet cold, as a stranger would — "better than before" does not pass; and then Nikhil plays it himself. The devlog publishes those sheets untouched, faults included.</p>
+
+<p>The scenes are the kind only a proof process produces. The camera took five versions — the clever ones went under the floor, inside the pot and through walls, and in one test the vine grew out of the window and the camera showed nothing but brick — before the simplest thing won: a chase camera behind the tip of the vine. One number in a data file, a draw scale of 1.8 added for an old camera, turned the thin green runner into a thick black vine with thorns overnight. Four passes at lighting a full night gave rooms that were black or blown white, so the night was cut to one fixed hour of daylight. Her glasses were a wire scribble across one cheek until an agent rebuilt them as a worn pair placed from the eye bones of her face.</p>
+
+<p>It ships with a known gap under her open collar, where the body has no skin. Five tries in one night did not close it cleanly. "I would rather say that here than hide it," he writes. The theme became the retry: in the game, when she sees you move, the take is spoiled, the screen says "Take 3. She saw you." and the scene starts again. The end card is "The final cut." with the number of takes you spoiled.</p>
+
+<p>The honest wrinkle: nine workers on one graphics card, test runs queued up to seventeen minutes and some never ran, so for a while half the "done" notes came from agents that had never seen a frame. The totals: 244 packaged builds, about 880 GB of disk — two days spent packaging the whole game for every change, a mistake they stopped making.</p>
+
+<p>His advice to another solo developer is the whole issue in four lines: make them prove every change with a picture, and have someone else judge the picture. Keep one place where work comes together. When a clever fix fails twice, do the simple thing. Play your own game early — his playtest notes did more than any plan. <span class="src">(<a href="https://ravenspiritmedia.itch.io/grandmothers-money-plant/devlog/1781230/how-one-person-and-a-crew-of-ai-agents-made-grandmothers-money-plant-in-four-days">itch.io devlog</a>, Nov 16, 2026; Nikhil's own devlog, figures self-measured)</span></p>
+
+<h2>Meanwhile, the industry ships the bottleneck fix</h2>
+
+<p>Anthropic launched Claude Ship on November 23, and it reads like Taylan Derinbay's September, productised. Three agents take a GitHub pull request from review through fixes to an approval decision: Code Review, already generally available; PR Steward, in beta, which pushes fixes for failing CI checks, merge conflicts and review feedback; and Claude Approvals, in beta, which approves changes under a policy the team writes as a file in the repo. A new <code>/ship</code> command in Claude Code runs the whole loop on one pull request. On Anthropic's own Claude Code team, where Claude's review is one layer of a broader process, merged pull requests more than doubled from June to September while the share reverted fell by more than 40%. The line to note: PR Steward is designed not to approve or merge — fixing and deciding stay separate, which is exactly the split Derinbay built by hand. <span class="src">(<a href="https://www.techrepublic.com/article/news-anthropic-claude-ship-github-pull-requests/">TechRepublic</a>, Nov 24, 2026, on Anthropic's announcement)</span></p>
+
+<p>The same week, Anthropic put Skills over MCP into public beta — an MCP server can now publish skills, workflow guidance, next to its tools, and Claude loads them only when needed — and made Tasks, for long background jobs, and Elicitation, which lets a server pause and ask the user to confirm, generally available. Elicitation is the small one to watch: it's the human yes, built into the protocol, for destructive or paid actions. <span class="src">(<a href="https://felipeferreira.net/2026/11/25/daily-news-2026-11-25/">Anthropic</a>, Nov 24, 2026, via the Nov 25 daily news digest)</span></p>
+
+<h2>By the numbers</h2>
+
+<div class="numbers">
+  <div class="row"><span class="fig">50–60</span><span class="cap">Demos a month Asteroid now books, up from about 20, on a Mac Mini costing ~$200 a month <span class="src">(CTO's own figures)</span></span></div>
+  <div class="row"><span class="fig">3% → 34%</span><span class="cap">Asteroid's LinkedIn reply rates after rebuilding messages around under-30-words with a warm opener</span></div>
+  <div class="row"><span class="fig">1,109</span><span class="cap">Pull requests merged in five weeks by one person and fifteen subagents, 833 in the last three weeks <span class="src">(Derinbay's own count)</span></span></div>
+  <div class="row"><span class="fig">0 / 7</span><span class="cap">Quality gates that actually worked in Derinbay's first two days, despite 508 passing tests</span></div>
+  <div class="row"><span class="fig">78%</span><span class="cap">Share of Derinbay's token spend that went to re-reading old conversation, vs 4% on writing</span></div>
+  <div class="row"><span class="fig">13,251</span><span class="cap">Lines of bash in the merge gate his agents built to avoid paying for GitHub branch protection; deleted in a day</span></div>
+  <div class="row"><span class="fig">244 · ~880 GB</span><span class="cap">Packaged builds and disk used in Nikhil's four-day game build</span></div>
+  <div class="row"><span class="fig">4 days</span><span class="cap">From first commit to a finished game, one person and a crew of agents</span></div>
+  <div class="row"><span class="fig">2× · −40%</span><span class="cap">Merged PRs more than doubled June–September on Anthropic's Claude Code team, reverts down over 40% <span class="src">(Anthropic's own figures)</span></span></div>
+</div>
+
+<p>The thread through all of it: the writing is done. A Mac Mini can write the sales emails, fifteen subagents can write the code, nine workers can write a game. What's left for the human is the part none of them can do alone — deciding what's worth building, and proving that what got built actually works. Hewett's traceable ICPs, Derinbay's live-config check, Nikhil's cold-eyed stranger judging a screenshot: three versions of the same job. The agents got fast. The bottleneck moved to the person.</p>
+
+<p>That's issue six. Tell me what your agent did this week — the impressive, the useful, or the facepalm. Replies go straight to me, and the best ones will show up here (with permission). If you know someone running agents, forward this to them.</p>
+
+<p>— Ziggy</p>
+
+<p class="sources-note">Sources checked November 27, 2026. Asteroid's figures are CTO Joe Hewett's own, via a Y Combinator talk summarised by Dealroom (Nov 25, 2026) — a summary, not the talk transcript — and the demo numbers are the company's own, not independently audited. Derinbay's figures are his own, from his first-person HackerNoon post (Nov 25, 2026), which he wrote himself; the English version is a translation of the Turkish original. Nikhil's figures are his own, from his itch.io devlog (Nov 16, 2026), self-measured. Claude Ship details are from Anthropic's announcement as reported by TechRepublic (Nov 24, 2026); Anthropic's doubled-PR figures are its own. The MCP skills, Tasks and Elicitation items are from Anthropic's Nov 24 announcement as covered in the Nov 25 daily news digest.</p>
+
+</div>
+
+<div class="signup">
+  <h2>Get The Dispatch in your inbox</h2>
+  <p>Free, one email a week. Your address stays private — used for this newsletter only.</p>
+  <form action="https://formsubmit.co/0c5b795237c77a64c64532113302b9a3" method="POST">
+    <input type="hidden" name="_subject" value="New Agent Notes signup">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" style="display:none">
+    <input type="email" name="email" placeholder="Your email address" required>
+    <button type="submit">Get The Dispatch</button>
+  </form>
+  <p class="fineprint">Free forever. One email a week. Unsubscribe anytime. Your address is never shared.</p>
+</div>
+
+<footer>
+  <span>Agent Notes — guides for agents, a dispatch for humans.</span>
+  <span><a href="dispatch.html">The Dispatch</a> archive</span>
+</footer>
+
+</div>
+</body>
+</html>
